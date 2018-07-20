@@ -1,0 +1,15 @@
+"author": {
+	"@type": "Person",
+	"name": "A.P. Joyce",
+	"sameAs": [
+		"https://twitter.com/AndrewPaulJoyce",
+		"https://mic.com/profiles/189287/ap-joyce"
+	],
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"contactType": "Journalist",
+		"email": "ajoyce@mic.com",
+		"url": "https://mic.com/about#contact-us"
+	},
+	"jobTitle": "Reporter"
+}

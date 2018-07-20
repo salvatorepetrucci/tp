@@ -1,0 +1,5 @@
+{
+    "@context": "http://schema.org",
+    "@type": "SatiricalArticle",
+    include "json/partials/+NewsArticle.json"
+}

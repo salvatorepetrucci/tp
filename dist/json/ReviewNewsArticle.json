@@ -1,0 +1,105 @@
+{
+    "@context": "http://schema.org",
+    "@type": "ReviewNewsArticle",
+    "url": "http://www.ilsole24ore.com",
+    "publisher": {
+
+        "@type": "NewsMediaOrganization",
+        "name": "Il Sole 24 ORE",
+        "ethicsPolicy": "path-to-ethicsPolicy",
+        "masthead": "path-to-masthead",
+        "missionCoveragePrioritiesPolicy": "path-to-missionCoveragePrioritiesPolicy",
+        "diversityPolicy": "path-to-diversityPolicy",
+        "correctionsPolicy": "path-to-correctionsPolicy",
+        "verificationFactCheckingPolicy": "path-to-verificationFactCheckingPolicy",
+        "unnamedSourcesPolicy": "path-to-unnamedSourcesPolicy",
+        "actionableFeedbackPolicy": "path-to-actionableFeedbackPolicy",
+        "foundingDate": "1965-11-09",
+        "diversityStaffingReport": "path-to-diversityStaffingReport",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.ilsole24ore.com",
+            "width": "800",
+            "height": "450"
+        }
+
+    },
+    "datePublished": "2017-12-15T23:55:11+00:00",
+    "dateModified": "2017-12-15T23:55:11+00:00",
+    "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    "description": "meta description",
+    "articleSection": "Satire",
+    "articleBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+    consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
+    cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
+    proident,
+    sunt in culpa qui officia deserunt mollit anim id est laborum.
+    ",
+    "keywords": [
+        "donald trump",
+        "humor",
+        "satire",
+        "white house"
+    ],
+    "image": {
+        "@type": "ImageObject",
+        "width": 800,
+        "height": 450,
+        "url": "http://www.ilsole24ore.com"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "A.P. Joyce",
+        "sameAs": [
+            "https://twitter.com/AndrewPaulJoyce",
+            "https://mic.com/profiles/189287/ap-joyce"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Journalist",
+            "email": "ajoyce@mic.com",
+            "url": "https://mic.com/about#contact-us"
+        },
+        "jobTitle": "Reporter"
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "url"
+    },
+    "correction": {
+        "@type": "CorrectionComment",
+        "text": "An earlier version of this article misstated the number of times Denzel Washington has been nominated for an Oscar. His nod for 'Roman J. Israel, Esq.' brings the total to nine, not eight. An earlier version also misstated the sponsor of photography by Dorothea Lange and Walker Evans. It was the Farm Security Administration, not the Works Progress Administration.",
+        "datePublished": "2018-01-23"
+    },
+    "citation": [
+
+        {
+            "@type": "DataCatalog",
+            "headline": "YouGov Survey Results",
+            "url": "http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/pvsh4yddit/InternalResults_170420_Demographics_W.pdf"
+        },
+        {
+            "@type": "ScholarlyArticle",
+            "headline": "Young people, political participation and trust in Britain",
+            "url": "http://www.exeter.ac.uk/media/universityofexeter/research/microsites/epop/papers/Henn_and_Foard_-_Young_People,_Political_Participation_and_Trust_in_Britain.pdf"
+        },
+        {
+            "@type": "ReportageNewsArticle",
+            "headline": "General election 2017: The mystery of the three million 'extra' voters",
+            "url": "http://www.bbc.co.uk/news/election-2017-39922798"
+        }
+    ],
+    "itemReviewed": {
+        "@type": "Movie",
+        "name": "Star Wars: The Last Jedi",
+        "image": {
+            "@type": "ImageObject",
+            "width": 720,
+            "height": 405,
+            "url": "https://ichef-1.bbci.co.uk/news/624/cpsprodpb/12A01/production/_99198267_043567974-1.jpg"
+        },
+        "sameAs": "http://www.starwars.com/the-last-jedi/"
+    }
+}

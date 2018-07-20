@@ -1,0 +1,7 @@
+{
+    "@context": "http://schema.org",
+    "@type": "ReviewNewsArticle",
+    include "json/partials/+NewsArticle.json"
+    ,
+    include "json/partials/_itemReviewed.json"
+}

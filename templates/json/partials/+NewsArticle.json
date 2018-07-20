@@ -1,0 +1,27 @@
+include "json/partials/_url.json"
+,
+include "json/partials/_publisher.json"
+,
+include "json/partials/_datePublished.json"
+,
+include "json/partials/_dateModified.json"
+,
+include "json/partials/_headline.json"
+,
+include "json/partials/_description.json"
+,
+include "json/partials/_articleSection.json"
+,
+include "json/partials/_articleBody.json"
+,
+include "json/partials/_keywords.json"
+,
+include "json/partials/_image.json"
+,
+include "json/partials/_author.json"
+,
+include "json/partials/_mainentityofpage.json"
+,
+include "json/partials/_correction.json"
+,
+include "json/partials/_citation.json"

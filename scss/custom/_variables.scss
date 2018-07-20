@@ -1,0 +1,72 @@
+$breakpoints: (break-0: 0, break-1: 768) !default;
+
+// a little shady, sorry, but not to mess with bulma too much we keep the font-size to 100%
+$rootsizes: (rootsize-0: 16, rootsize-1: 16) !default;
+
+$measures: (measure-0: 400, measure-1: 660) !default;
+
+$maxwidths: (width-0: 400, width-1: 660) !default;
+
+$sans-serif-default: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$serif-default: Georgia, "Times New Roman", Times, serif !default;
+
+$text: (font-family: "Sole_Serif_Text, Georgia, Cambria, Times New Roman, Times, serif", bold: 700, normal: 400, light: 400, italic: italic, cap-height: 0.7);
+
+$head: (font-family: "Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
+
+$ref: (font-family: "Libre Franklin, sans-serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
+
+$text_m: (font-family: #{$serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
+
+$head_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, cap-height: 0.7);
+
+$ref_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
+
+$monospacetype: (font-family: "Menlo, monospace", regular: 400, cap-height: 0.68) !default;
+
+$modular-scale: (scale-0: (d1: 32, d2: 28, h1: 32, h2: 28, h3: 24, h4: 21, h5: 19, c: 18, r1: 16, r2: 14, r3: 12), scale-1: (d1: 54, d2: 43, h1: 36, h2: 32, h3: 28, h4: 24, h5: 21, c: 20, r1: 18, r2: 16, r3: 14));
+
+$c_66: 2 / 3;
+
+$c_33: 1 / 3;
+
+$heading-color: #2E2E2E !default;
+
+$body-color: #494949 !default;
+
+$link-color: #0E58F5 !default;
+
+$hover-color: #0B348B !default;
+
+$caption-color: #BDC8CC !default;
+
+$white: #FFFFFF !default;
+
+$white-dark: #f1f1f1;
+
+$background-color: #FCFCFC !default;
+
+$code-background-color: #F5F4F2 !default;
+
+// temp variables
+
+$black: #000;
+
+$white: #fff;
+
+$grey-light: #f1f1f1;
+
+$yellow: #f0d077;
+
+$blue-dark: #112531;
+
+$green: #E8F3EC;
+
+// navbar custom
+
+$desktop-navbar-height: 5rem;
+$touch-navbar-height: 3.75rem;
+
+$navbar-padding-vertical: 1.25rem !default;
+$navbar-padding-horizontal: 2.5rem !default;

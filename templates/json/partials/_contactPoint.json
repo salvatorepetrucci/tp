@@ -1,0 +1,14 @@
+"contactPoint": [
+    {
+        "@type": "ContactPoint",
+        "contactType": "Newsroom Contact",
+        "email": "haveyoursay@bbc.co.uk",
+        "url": "http://www.bbc.co.uk/contact#news"
+    },
+    {
+        "@type": "ContactPoint",
+        "contactType": "Public Engagement",
+        "email": "haveyoursay@bbc.co.uk",
+        "url": "http://www.bbc.co.uk/news/have_your_say"
+    }
+]

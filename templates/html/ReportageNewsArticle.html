@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        include "html/meta/_core.html"
+        include "html/meta/_facebook.html"
+        include "html/meta/_twitter.html"
+
+        <script type="application/ld+json">
+        include "tmp/ReportageNewsArticle.json"
+        </script>
+
+        <title>ReportageNewsArticle - Trust Project Il Sole 24 Ore</title>
+        include "html/partials/_up.html"
+    </head>
+    <body>
+        include "html/partials/_nav.html"
+        <div class="container">
+            
+            <section class="articles">
+                <div class="column is-8 is-offset-2">
+                    include "html/demo/_ReportageNewsArticle_card.html"
+                </div>
+            </section>
+        </div>
+        include "html/partials/_footer.html"
+    </body>
+</html>

@@ -1,0 +1,30 @@
+{
+	"@context": "http://schema.org",
+	"@type": "NewsMediaOrganization",
+	include "json/partials/_name.json"
+	,
+	include "json/partials/_url.json"
+	,
+	include "json/partials/_ethicsPolicy.json"
+	,
+	include "json/partials/_masthead.json"
+	,
+	include "json/partials/_missionCoveragePrioritiesPolicy.json"
+	,
+	include "json/partials/_diversityPolicy.json"
+	,
+	include "json/partials/_correctionsPolicy.json"
+	,
+	include "json/partials/_verificationFactCheckingPolicy.json"
+	,
+	include "json/partials/_unnamedSourcesPolicy.json"
+	,
+	include "json/partials/_actionableFeedbackPolicy.json"
+	,
+	include "json/partials/_foundingDate.json"
+	,
+	include "json/partials/_diversityStaffingReport.json"
+	,
+	include "json/partials/_logo.json"
+
+}

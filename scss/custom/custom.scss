@@ -1,0 +1,165 @@
+$unit: 1.25rem;
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 25px;
+}
+
+.card-content {
+    p {
+        &:not(.title), &:not(.subtitle) {
+            padding-bottom: $unit / 2;
+        }
+    }
+
+    ul {
+        list-style-type: initial;
+        padding-left: 1.25rem;
+
+        li {
+            padding-bottom: $unit / 2;
+        }
+    }
+}
+
+html, body {
+    // font-family: 'Open Sans', sans-serif;
+    font-family: unquote(map-get($ref, font-family));
+
+    // font-size: 14px;
+    // background: #F0F2F4;
+    background: #EFF3F4;
+}
+
+.navbar-item img {
+    height: 1.75rem;
+}
+
+.navbar.is-white {
+    background: #F0F2F4;
+}
+
+.navbar-brand .brand-text {
+    font-size: 1.11rem;
+    font-weight: bold;
+}
+
+.gruppo {
+    .hero-body {
+        // background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Plum_trees_Kitano_Tenmangu.jpg/1200px-Plum_trees_Kitano_Tenmangu.jpg);
+        // background-position: center;
+        // background-size: cover;
+        // background-repeat: no-repeat;
+        // height: 500px;
+
+        // background-color: #d13239;
+        background: #112531;
+
+        .title, .subtitle {
+            color: #ffffff;
+        }
+    }
+}
+
+.articles {
+    margin: 5rem 0;
+
+    // margin-top: -200px;
+}
+
+.articles .content p {
+    line-height: 1.9;
+    margin: 15px 0;
+}
+
+.author-image {
+    border: 3px solid #ccc;
+    border-radius: 50%;
+    height: 100px;
+    left: 50%;
+    margin-left: -50px;
+    position: absolute;
+    top: -50px;
+    width: 100px;
+    display: block;
+    background-color: #ffffff;
+}
+
+.media-center {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.media-content {
+    margin-top: 3rem;
+}
+
+.article, .promo-block {
+    margin-top: 6rem;
+}
+
+div.column.is-8:first-child {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.article-title {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.article-subtitle {
+    color: #909AA0;
+    margin-bottom: 3rem;
+}
+
+.article-body {
+    line-height: 1.4;
+    margin: 0 6rem;
+}
+
+.promo-block .container {
+    margin: 1rem 5rem;
+}
+
+.card, .box {
+    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
+    border-radius: 4px;
+}
+
+
+// hr
+
+.breathe {
+    margin-top: 3rem;
+}
+
+.content, .hero {
+
+    .menu {
+        ul {
+            list-style-type: none;
+        }
+    }
+
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: initial;
+    }
+
+    .title {
+        font-family: unquote(map-get($head, font-family));
+        font-weight: map-get($head, bold);
+    }
+
+    hr {
+        height: 6px;
+        background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
+        border: 0;
+        margin: 3rem 0;
+    }
+}

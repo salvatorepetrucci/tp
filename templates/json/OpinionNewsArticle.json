@@ -1,0 +1,5 @@
+{
+    "@context": "http://schema.org",
+    "@type": "OpinionNewsArticle",
+    include "json/partials/+NewsArticle.json"
+}

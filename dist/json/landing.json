@@ -1,0 +1,38 @@
+{
+    "@context": "http://schema.org",
+    "@type": "WebPage",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "url"
+    },
+    "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
+    "description": "meta description",
+    "image": {
+        "@type": "ImageObject",
+        "width": 800,
+        "height": 450,
+        "url": "http://www.ilsole24ore.com"
+    },
+    "publisher": {
+
+        "@type": "NewsMediaOrganization",
+        "name": "Il Sole 24 ORE",
+        "ethicsPolicy": "path-to-ethicsPolicy",
+        "masthead": "path-to-masthead",
+        "missionCoveragePrioritiesPolicy": "path-to-missionCoveragePrioritiesPolicy",
+        "diversityPolicy": "path-to-diversityPolicy",
+        "correctionsPolicy": "path-to-correctionsPolicy",
+        "verificationFactCheckingPolicy": "path-to-verificationFactCheckingPolicy",
+        "unnamedSourcesPolicy": "path-to-unnamedSourcesPolicy",
+        "actionableFeedbackPolicy": "path-to-actionableFeedbackPolicy",
+        "foundingDate": "1965-11-09",
+        "diversityStaffingReport": "path-to-diversityStaffingReport",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "http://www.ilsole24ore.com",
+            "width": "800",
+            "height": "450"
+        }
+
+    }
+}

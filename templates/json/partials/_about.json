@@ -1,0 +1,9 @@
+"about": {
+	"@type": "Event",
+	"name": "CBO score on Senate GOP health care bill",
+	"startDate": "2017-06-26T20:00:00+00:00",
+	"location": {
+		"@type": "Place",
+		"name": "",
+		"address": ""
+}

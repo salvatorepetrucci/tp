@@ -1,0 +1,83 @@
+{
+	"@context": "http://schema.org",
+	"@type": "Person",
+	"name": "Anais Ginori",
+	"url": "http://autori.gedi.it/profilo/Anais_Ginori",
+	"image": "http://autori.gedi.it/profilo/Anais_Ginori.jpg",
+	"description": "&lt;p&gt;Anais Ginori (Roma, 1975) &egrave; corrispondente da Parigi. Dopo gli inizi all&rsquo;Agence France Presse e a Le Monde, &egrave; arrivata a la Repubblica nel 1996 dove si &egrave; occupata prima di economia, ha lavorato alla redazione di Firenze, dal giugno 2000 scrive di Esteri. Vive a Parigi con i tre figli&lt;/p&gt;",
+	"identifier": "d5c541e67faf4f2284d091d1a061bc30",
+	"jobTitle": "Reporter",
+	"workLocation": {
+		"@type": "Place",
+		"name": "Parigi"
+	},
+	"sameAs": [
+		"http://autori.gedi.it/profilo/GID_d5c541e67faf4f2284d091d1a061bc30"
+	],
+	"contactPoint": {
+		"@type": "ContactPoint",
+		"contactType": "Journalist",
+		"url": "http://autori.gedi.it/profilo/Anais_Ginori",
+		"email": "a.ginori@repubblica.it"
+	},
+	"affiliation": [
+		{
+			"@type": "NewsMediaOrganization",
+			"name": "La Repubblica",
+			"url": "http://www.repubblica.it/",
+			"parentOrganization": {
+				"@type": "NewsMediaOrganization",
+				"name": "Gruppo GEDI SpA",
+				"logo": {
+					"@type": "ImageObject",
+					"url": "http://www.gedispa.it/fileadmin/templates/geresponsive/resources/images/logoEspresso_name.svg",
+					"width": 190,
+					"height": 83
+				}
+			}
+		}
+	],
+	"award": [
+		"1999 - Premio Ilaria Alpi",
+		"2003 - Premio Ischia",
+		"2012 - Young Leaders",
+		"E' membro della giuria per il Prix du Livre Européen"
+	],
+	"knowsAbout": [
+		{
+			"@type": "Thing",
+			"name": "cronaca"
+		},
+		{
+			"@type": "Thing",
+			"name": "esteri",
+			"sameAs": "https://www.wikidata.org/wiki/Q4688862"
+		},
+		{
+			"@type": "Thing",
+			"name": "politica",
+			"sameAs": "https://www.wikidata.org/wiki/Q7163"
+		},
+		{
+			"@type": "Place",
+			"name": "Francia"
+		}
+	],
+	"knowsLanguage": [
+		{
+			"@type": "Language",
+			"name": "francese",
+			"sameAs": "https://www.wikidata.org/wiki/Q150"
+		},
+		{
+			"@type": "Language",
+			"name": "inglese",
+			"sameAs": "https://www.wikidata.org/wiki/Q1860"
+		},
+		{
+			"@type": "Language",
+			"name": "italiano",
+			"sameAs": "https://www.wikidata.org/wiki/Q652"
+		}
+	]
+}

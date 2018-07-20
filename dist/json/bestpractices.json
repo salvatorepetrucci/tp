@@ -1,0 +1,23 @@
+{
+    "@context": "http://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "Il Sole 24 ORE",
+    "url": "http://www.ilsole24ore.com",
+    "ethicsPolicy": "path-to-ethicsPolicy",
+    "masthead": "path-to-masthead",
+    "missionCoveragePrioritiesPolicy": "path-to-missionCoveragePrioritiesPolicy",
+    "diversityPolicy": "path-to-diversityPolicy",
+    "correctionsPolicy": "path-to-correctionsPolicy",
+    "verificationFactCheckingPolicy": "path-to-verificationFactCheckingPolicy",
+    "unnamedSourcesPolicy": "path-to-unnamedSourcesPolicy",
+    "actionableFeedbackPolicy": "path-to-actionableFeedbackPolicy",
+    "foundingDate": "1965-11-09",
+    "diversityStaffingReport": "path-to-diversityStaffingReport",
+    "logo": {
+        "@type": "ImageObject",
+        "url": "http://www.ilsole24ore.com",
+        "width": "800",
+        "height": "450"
+    }
+
+}

@@ -1,0 +1,28 @@
+// The improve-legibility mixin is recommended for headers and smaller amounts of text
+// due to the more resource-intensive font-rendering. It is not recommended for mobile
+// devices. For more information, refer to the MDN article ( https://developer.mozilla.org/en-US/docs/CSS/text-rendering ),
+// or Gigaom ( http://gigaom.com/2010/08/12/optimizelegibility-for-clearer-text-in-your-browser/ ).
+
+@mixin improve-legibility {
+    text-rendering: optimizeLegibility;
+
+    @include text-shadow(0, 0, 1px, transparent);
+}
+
+@mixin font-smoothing($value: on) {
+    @if $value == on {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    @else {
+        -webkit-font-smoothing: subpixel-antialiased;
+        -moz-osx-font-smoothing: auto;
+    }
+}
+
+//  .dark-on-light {
+//      @include font-smoothing(off);
+//  }
+//  .light-on-dark {
+//      @include font-smoothing(on);
+//  }

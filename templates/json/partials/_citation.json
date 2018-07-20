@@ -1,0 +1,18 @@
+"citation": [
+
+	{
+		"@type": "DataCatalog",
+		"headline": "YouGov Survey Results",
+		"url": "http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/pvsh4yddit/InternalResults_170420_Demographics_W.pdf"
+	},
+	{
+		"@type": "ScholarlyArticle",
+		"headline": "Young people, political participation and trust in Britain",
+		"url": "http://www.exeter.ac.uk/media/universityofexeter/research/microsites/epop/papers/Henn_and_Foard_-_Young_People,_Political_Participation_and_Trust_in_Britain.pdf"
+	},
+	{
+		"@type": "ReportageNewsArticle",
+		"headline": "General election 2017: The mystery of the three million 'extra' voters",
+		"url": "http://www.bbc.co.uk/news/election-2017-39922798"
+	}
+]

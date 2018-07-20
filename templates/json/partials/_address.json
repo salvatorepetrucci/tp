@@ -1,0 +1,8 @@
+"address": {
+	"@type": "PostalAddress",
+	"streetAddress": "Via Monte Rosa, 91",
+	"addressLocality": "",
+	"addressRegion": "Città Metropolitana di Milano",
+	"postalCode": "20149",
+	"addressCountry": "Italy"
+}

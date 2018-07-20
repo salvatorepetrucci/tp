@@ -1,0 +1,13 @@
+{
+  "@context": "http://schema.org",
+	"@type": "WebPage",
+    include "json/partials/_mainentityofpage.json"
+    ,
+    include "json/partials/_headline.json"
+	,
+    include "json/partials/_description.json"
+    ,
+    include "json/partials/_image.json"
+	,
+    include "json/partials/_publisher.json"
+}
