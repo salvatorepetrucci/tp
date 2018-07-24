@@ -1,4 +1,7 @@
 "contactPoint": [
+
+// include the two contact points here a) newsroom contact b) AF contact
+
     {
         "@type": "ContactPoint",
         "contactType": "Newsroom Contact",

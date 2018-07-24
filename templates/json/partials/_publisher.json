@@ -23,6 +23,10 @@
 	,
 	include "json/partials/_diversityStaffingReport.json"
 	,
+	include "json/partials/_ownershipFundingInfo.json"
+	,
+	include "json/partials/_contactPoint.json"
+	,
 	include "json/partials/_logo.json"
 
 }

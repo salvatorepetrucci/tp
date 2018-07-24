@@ -21,9 +21,13 @@
 	,
 	include "json/partials/_actionableFeedbackPolicy.json"
 	,
+	include "json/partials/_ownershipFundingInfo.json"
+	,
 	include "json/partials/_foundingDate.json"
 	,
 	include "json/partials/_diversityStaffingReport.json"
+	,
+	include "json/partials/_contactPoint.json"
 	,
 	include "json/partials/_logo.json"
 

@@ -87,7 +87,7 @@
     ];
     var cut = [
         uncss({
-            html: ['https://area24-en.ilsole24ore.com', 'https://area24-en.ilsole24ore.com/featured', 'https://area24.ilsole24ore.com/news/il-giornale-del-futuro-in-che-direzione-stiamo-andando']
+            html: ['https://area24-en.ilsole24ore.com/trust/index.html', 'https://area24-en.ilsole24ore.com/trust/author.html', 'https://area24-en.ilsole24ore.com/trust/NewsArticle.html']
         })
     ];
 
