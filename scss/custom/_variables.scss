@@ -15,7 +15,7 @@ $text: (font-family: "Sole_Serif_Text, Georgia, Cambria, Times New Roman, Times,
 
 $head: (font-family: "Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
 
-$ref: (font-family: "Libre Franklin, sans-serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
+$ref: (font-family: "Montserrat, sans-serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
 
 $text_m: (font-family: #{$serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
 
@@ -70,3 +70,43 @@ $touch-navbar-height: 3.75rem;
 
 $navbar-padding-vertical: 1.25rem !default;
 $navbar-padding-horizontal: 2.5rem !default;
+
+
+// sole brand
+
+$sole-blue-lightest: #869fb2;
+
+$sole-blue-light: #547085;
+
+$sole-blue: #415f76;
+
+$sole-blue-dark: #234357;
+
+$sole-blue-darkest: #1a3446;
+
+$pink-lightest: #faf2eb;
+
+$pink-light: #f7ebdf;
+
+$pink: #f3e2d1;
+
+$pink-dark: #e6d6c7;
+
+$pink-darkest: #dcb;
+
+$pink-contrast: #c4b6a8;
+
+
+// trust
+
+$salmon_background: #f5e5d5;
+
+$salmon_box: #e6d6c7;
+
+$black_text: #1a171b;
+
+$black_hover: #4d4747;
+
+$blue_background: #234357;
+
+$white: #ffffff;

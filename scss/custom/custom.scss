@@ -1,4 +1,24 @@
+html, body {
+    font-family: unquote(map-get($ref, font-family));
+    background: $salmon_background;
+    color: $black_text;
+}
+
 $unit: 1.25rem;
+
+a {
+    color: $black_text;
+}
+
+a:hover {
+    color: $black_hover;
+}
+
+.copy {
+    a:hover {
+        text-decoration: underline;
+    }
+}
 
 .sticky {
     position: -webkit-sticky;
@@ -6,30 +26,44 @@ $unit: 1.25rem;
     top: 25px;
 }
 
-.card-content {
-    p {
-        &:not(.title), &:not(.subtitle) {
-            padding-bottom: $unit / 2;
+.content {
+    .card-content, .intro {
+        p, ul {
+            font-family: unquote(map-get($text, font-family));
+            font-weight: map-get($text, normal);
         }
-    }
 
-    ul {
-        list-style-type: initial;
-        padding-left: 1.25rem;
+        p {
+            &:not(.title), &:not(.subtitle) {
+                padding-bottom: $unit / 2;
+            }
+        }
 
-        li {
-            padding-bottom: $unit / 2;
+        .title {
+            font-family: unquote(map-get($head, font-family));
+            font-weight: map-get($head, bold);
+        }
+
+        ul {
+            list-style-type: initial;
+            padding-left: 1.25rem;
+
+            li {
+                padding-bottom: $unit / 2;
+            }
+        }
+
+        ol:not(:last-child),
+        p:not(:last-child),
+        ul:not(:last-child) {
+            margin-bottom: 0;
         }
     }
 }
 
-html, body {
-    // font-family: 'Open Sans', sans-serif;
-    font-family: unquote(map-get($ref, font-family));
-
-    // font-size: 14px;
-    // background: #F0F2F4;
-    background: #EFF3F4;
+.subtitle {
+    font-family: unquote(map-get($head, font-family));
+    font-weight: map-get($head, normal);
 }
 
 .navbar-item img {
@@ -37,7 +71,7 @@ html, body {
 }
 
 .navbar.is-white {
-    background: #F0F2F4;
+    background: $white;
 }
 
 .navbar-brand .brand-text {
@@ -53,11 +87,10 @@ html, body {
         // background-repeat: no-repeat;
         // height: 500px;
 
-        // background-color: #d13239;
-        background: #112531;
+        background: $blue_background;
 
         .title, .subtitle {
-            color: #ffffff;
+            color: $white;
         }
     }
 }
@@ -83,7 +116,7 @@ html, body {
     top: -50px;
     width: 100px;
     display: block;
-    background-color: #ffffff;
+    background-color: $white;
 }
 
 .media-center {
@@ -124,13 +157,17 @@ div.column.is-8:first-child {
     margin: 1rem 5rem;
 }
 
-.card, .box {
-    // box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
-    background: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
-    border-radius: 4px;
+.box {
+    background: transparent;
+    box-shadow: none;
+    border-radius: initial;
 }
 
+.card {
+    background: $salmon_box;
+    box-shadow: rgba(196, 182, 168, 0.8) 0 1px 0;
+    border-radius: 4px;
+}
 
 // hr
 
@@ -139,13 +176,11 @@ div.column.is-8:first-child {
 }
 
 .content, .hero {
-
     .menu {
         ul {
             list-style-type: none;
         }
     }
-
 
     h1, h2, h3, h4, h5, h6 {
         font-weight: initial;
@@ -161,5 +196,22 @@ div.column.is-8:first-child {
         background: url(http://ibrahimjabbari.com/english/images/hr-12.png) repeat-x 0 0;
         border: 0;
         margin: 3rem 0;
+    }
+
+    .card-content {
+        .title {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.menu-list {
+    a {
+        color: $black_text;
+    }
+
+    a:hover {
+        background-color: transparent;
+        color: $black_hover;
     }
 }
