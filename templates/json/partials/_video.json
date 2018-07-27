@@ -1,0 +1,12 @@
+"video": {
+	"@type": "VideoObject",
+	"description": "Catch this exclusive interview with Dave Grohl and the Foo Fighters about their new album, Rope.",
+	"duration": "T1M33S",
+	"name": "Interview with the Foo Fighters",
+	"thumbnail": "foo-fighters-interview-thumb.jpg",
+	"uploadDate" : "2015-10-02",
+	"author": {
+	"@type": "Person",
+	"name": "Mario Rossi"
+	}
+}

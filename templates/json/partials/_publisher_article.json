@@ -1,0 +1,10 @@
+"publisher": {
+
+	"@type": "NewsMediaOrganization",
+	include "json/partials/_name.json"
+	,
+	include "json/partials/_publishingPrinciples.json"
+	,
+	include "json/partials/_logo.json"
+
+}

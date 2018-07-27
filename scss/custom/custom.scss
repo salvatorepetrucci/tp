@@ -215,3 +215,128 @@ div.column.is-8:first-child {
         color: $black_hover;
     }
 }
+
+
+
+//
+
+.social {
+    a {
+        text-align: center;
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        background-color: #396E87;
+        border-radius: 100%;
+        padding-right: 7px;
+
+        i {
+            font-size: 14px;
+            line-height: 30px;
+            color: $white;
+        }
+    }
+}
+
+.stores {
+    display: inline-block;
+
+    img {
+        height: 30px;
+    }
+}
+
+
+    .section-footer {
+        margin-top: $unit * 4;
+    }
+
+    .level {
+        &.adv {
+            margin-bottom: 0;
+        }
+    }
+
+    .sole-logo, .gruppo-logo {
+        height: 70px;
+        overflow: hidden;
+
+        img {
+            padding: 0;
+        }
+    }
+
+    .sole-logo {
+        img {
+            height: 26px;
+            margin-top: 22px;
+        }
+    }
+
+    .gruppo-logo {
+        text-align: center;
+        margin-bottom: 40px;
+
+        img {
+            height: 36px;
+            margin-top: 17px;
+        }
+    }
+
+    .sole-menu, .gruppo-menu {
+        height: 50px;
+        overflow: hidden;
+        line-height: 50px;
+    }
+
+    .sole-menu {
+        border-top: 1px solid #000;
+    }
+
+    .gruppo-menu {
+        border-bottom: 1px solid #fff;
+    }
+
+    .footer-pink {
+        background-color: $salmon_box;
+        font-family: unquote(map-get($head, font-family));
+        font-weight: map-get($head, bold);
+        font-size: 14px;
+
+        a {
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }
+
+    .footer-blue {
+        background-color: $blue-dark;
+        font-family: unquote(map-get($ref, font-family));
+        font-size: 14px;
+        color: $white;
+        padding-bottom: 100px;
+
+        .corporate {
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+
+            a {
+                font-weight: map-get($ref, bold);
+            }
+        }
+
+        a {
+            color: $white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }

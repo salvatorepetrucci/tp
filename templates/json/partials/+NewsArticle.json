@@ -1,6 +1,6 @@
 include "json/partials/_url.json"
 ,
-include "json/partials/_publisher.json"
+include "json/partials/_publisher_article.json"
 ,
 include "json/partials/_datePublished.json"
 ,
@@ -17,6 +17,8 @@ include "json/partials/_articleBody.json"
 include "json/partials/_keywords.json"
 ,
 include "json/partials/_image.json"
+,
+include "json/partials/_video.json"
 ,
 include "json/partials/_author.json"
 ,

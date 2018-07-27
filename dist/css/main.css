@@ -7089,3 +7089,135 @@ div.column.is-8:first-child{
 .menu-list a:hover{
   background-color:transparent;
   color:#4d4747; }
+
+.social a{
+  text-align:center;
+  display:inline-block;
+  width:30px;
+  height:30px;
+  background-color:#396E87;
+  border-radius:100%;
+  padding-right:7px; }
+  .social a i{
+    font-size:14px;
+    line-height:30px;
+    color:#ffffff; }
+
+.stores{
+  display:inline-block; }
+  .stores img{
+    height:30px; }
+
+.section-footer{
+  margin-top:5rem; }
+
+.level.adv{
+  margin-bottom:0; }
+
+.sole-logo, .gruppo-logo{
+  height:70px;
+  overflow:hidden; }
+  .sole-logo img, .gruppo-logo img{
+    padding:0; }
+
+.sole-logo img{
+  height:26px;
+  margin-top:22px; }
+
+.gruppo-logo{
+  text-align:center;
+  margin-bottom:40px; }
+  .gruppo-logo img{
+    height:36px;
+    margin-top:17px; }
+
+.sole-menu, .gruppo-menu{
+  height:50px;
+  overflow:hidden;
+  line-height:50px; }
+
+.sole-menu{
+  border-top:1px solid #000; }
+
+.gruppo-menu{
+  border-bottom:1px solid #fff; }
+
+.footer-pink{
+  background-color:#e6d6c7;
+  font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+  font-weight:700;
+  font-size:14px; }
+  .footer-pink a{
+    color:#000;
+    text-transform:uppercase; }
+  .footer-pink a:hover{
+    opacity:.7; }
+
+.footer-blue{
+  background-color:#112531;
+  font-family:Montserrat, sans-serif;
+  font-size:14px;
+  color:#ffffff;
+  padding-bottom:100px; }
+  .footer-blue .corporate{
+    font-size:12px;
+    text-align:center;
+    line-height:20px; }
+    .footer-blue .corporate a{
+      font-weight:700; }
+  .footer-blue a{
+    color:#ffffff;
+    padding-left:5px;
+    padding-right:5px; }
+  .footer-blue a:hover{
+    opacity:.7; }
+
+@font-face{
+  font-family:'icomoon';
+  src:url("/fonts/icomoon/fonts/icomoon.woff2?y4prfo") format("woff2"), url("/fonts/icomoon/fonts/icomoon.ttf?y4prfo") format("truetype"), url("/fonts/icomoon/fonts/icomoon.woff?y4prfo") format("woff"), url("/fonts/icomoon/fonts/icomoon.svg?y4prfo#icomoon") format("svg");
+  font-weight:normal;
+  font-style:normal; }
+
+i{
+  font-family:'icomoon' !important;
+  speak:none;
+  font-style:normal;
+  font-weight:normal;
+  font-variant:normal;
+  text-transform:none;
+  line-height:1;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale; }
+
+.icon-magnifier:before{
+  content:"\e922"; }
+
+.icon-check:before{
+  content:"\e934"; }
+
+.icon-cross:before{
+  content:"\e935"; }
+
+.icon-twitter:before{
+  content:"\f099"; }
+
+.icon-facebook:before{
+  content:"\f09a"; }
+
+.icon-facebook-f:before{
+  content:"\f09a"; }
+
+.icon-feed:before{
+  content:"\f09e"; }
+
+.icon-rss:before{
+  content:"\f09e"; }
+
+.icon-google-plus:before{
+  content:"\f0d5"; }
+
+.icon-youtube-play:before{
+  content:"\f16a"; }
+
+.icon-instagram:before{
+  content:"\f16d"; }
