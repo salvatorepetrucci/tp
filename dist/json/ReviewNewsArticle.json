@@ -51,9 +51,7 @@
             "@type": "Person",
             "name": "Mario Rossi"
         }
-    }
-
-    ,
+    },
     "author": {
         "@type": "Person",
         "name": "A.P. Joyce",
@@ -102,12 +100,6 @@
             "url": "http://www.bbc.co.uk/news/election-2017-39922798"
         }
     ],
-
-// Note to Pier: itemReview and full properties as below is not mandated by the Trust Protocol. We templated it on our examples 
-// to avoid Google tool validation errors, since ReviewNewsArticle is equivalent to @type Review which needs itemReviewed. If your CMS
-// is already capturing this data and marking it up anyway, let it stay. But if this requires new work, it is not needed for 
-// Trust Project MVP. We can ignore the Google SDT Tool errors. 
-
     "itemReviewed": {
         "@type": "Movie",
         "name": "Star Wars: The Last Jedi",

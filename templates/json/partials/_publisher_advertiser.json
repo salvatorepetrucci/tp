@@ -1,0 +1,7 @@
+"publisher": {
+
+	"@type": "Organization",
+	include "json/partials/_name.json"
+	,
+	include "json/partials/_logo.json"
+}
