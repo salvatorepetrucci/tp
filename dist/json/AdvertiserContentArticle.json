@@ -4,9 +4,8 @@
     "url": "http://www.ilsole24ore.com",
     "publisher": {
 
-        "@type": "NewsMediaOrganization",
+        "@type": "Organization",
         "name": "Il Sole 24 ORE",
-        "publishingPrinciples": "..put the Best Practices landing page link here.., the other site level BP attributes are all parsed from the BP landing page anyway",
         "logo": {
             "@type": "ImageObject",
             "url": "http://www.ilsole24ore.com",
@@ -51,55 +50,9 @@
             "@type": "Person",
             "name": "Mario Rossi"
         }
-    }
-
-    ,
-    "author": {
-        "@type": "Person",
-        "name": "A.P. Joyce",
-        "sameAs": [
-            "..put the author's IlSole24Ore home/profile page link here..",
-            "https://twitter.com/AndrewPaulJoyce",
-            "https://mic.com/profiles/189287/ap-joyce"
-        ],
-        // Contact Point author markup is not mandatory for article page, feel free to include
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Journalist",
-            "email": "ajoyce@mic.com",
-            "url": "https://mic.com/about#contact-us"
-        },
-        // Contact Point author markup is not mandatory for article page, feel free to include
-        "jobTitle": "Reporter"
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "url"
-    },
-    "correction": {
-
-        // CorrectionComment | Text | URL
-
-        "@type": "CorrectionComment",
-        "text": "An earlier version of this article misstated the number of times Denzel Washington has been nominated for an Oscar. His nod for 'Roman J. Israel, Esq.' brings the total to nine, not eight. An earlier version also misstated the sponsor of photography by Dorothea Lange and Walker Evans. It was the Farm Security Administration, not the Works Progress Administration.",
-        "datePublished": "2018-01-23"
-    },
-    "citation": [
-
-        {
-            "@type": "DataCatalog",
-            "headline": "YouGov Survey Results",
-            "url": "http://d25d2506sfb94s.cloudfront.net/cumulus_uploads/document/pvsh4yddit/InternalResults_170420_Demographics_W.pdf"
-        },
-        {
-            "@type": "ScholarlyArticle",
-            "headline": "Young people, political participation and trust in Britain",
-            "url": "http://www.exeter.ac.uk/media/universityofexeter/research/microsites/epop/papers/Henn_and_Foard_-_Young_People,_Political_Participation_and_Trust_in_Britain.pdf"
-        },
-        {
-            "@type": "ReportageNewsArticle",
-            "headline": "General election 2017: The mystery of the three million 'extra' voters",
-            "url": "http://www.bbc.co.uk/news/election-2017-39922798"
-        }
-    ]
+    }
 }
