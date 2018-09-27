@@ -4480,6 +4480,713 @@ z(p,function(a){h=a;u()});t(p,L(c,'"'+c.family+'",monospace'))})})};"object"===t
 /*! modernizr 3.6.0 (Custom Build) | MIT *
  * https://modernizr.com/download/?-csstransforms3d-csstransitions-localstorage-svgasimg-domprefixes-prefixed-prefixes-setclasses-shiv-testallprops-testprop-teststyles !*/
 !function(e,t,n){function r(e,t){return typeof e===t}function o(){var e,t,n,o,i,a,s;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],t=_[l],t.name&&(e.push(t.name.toLowerCase()),t.options&&t.options.aliases&&t.options.aliases.length))for(n=0;n<t.options.aliases.length;n++)e.push(t.options.aliases[n].toLowerCase());for(o=r(t.fn,"function")?t.fn():t.fn,i=0;i<e.length;i++)a=e[i],s=a.split("."),1===s.length?Modernizr[s[0]]=o:(!Modernizr[s[0]]||Modernizr[s[0]]instanceof Boolean||(Modernizr[s[0]]=new Boolean(Modernizr[s[0]])),Modernizr[s[0]][s[1]]=o),S.push((o?"":"no-")+s.join("-"))}}function i(e){var t=b.className,n=Modernizr._config.classPrefix||"";if(x&&(t=t.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+n+"no-js(\\s|$)");t=t.replace(r,"$1"+n+"js$2")}Modernizr._config.enableClasses&&(t+=" "+n+e.join(" "+n),x?b.className.baseVal=t:b.className=t)}function a(e){return e.replace(/([a-z])-([a-z])/g,function(e,t,n){return t+n.toUpperCase()}).replace(/^-/,"")}function s(){return"function"!=typeof t.createElement?t.createElement(arguments[0]):x?t.createElementNS.call(t,"http://www.w3.org/2000/svg",arguments[0]):t.createElement.apply(t,arguments)}function l(){var e=t.body;return e||(e=s(x?"svg":"body"),e.fake=!0),e}function u(e,n,r,o){var i,a,u,f,c="modernizr",d=s("div"),p=l();if(parseInt(r,10))for(;r--;)u=s("div"),u.id=o?o[r]:c+(r+1),d.appendChild(u);return i=s("style"),i.type="text/css",i.id="s"+c,(p.fake?p:d).appendChild(i),p.appendChild(d),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(t.createTextNode(e)),d.id=c,p.fake&&(p.style.background="",p.style.overflow="hidden",f=b.style.overflow,b.style.overflow="hidden",b.appendChild(p)),a=n(d,e),p.fake?(p.parentNode.removeChild(p),b.style.overflow=f,b.offsetHeight):d.parentNode.removeChild(d),!!a}function f(e,t){return!!~(""+e).indexOf(t)}function c(e,t){if("object"==typeof e)for(var n in e)F(e,n)&&c(n,e[n]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;t="function"==typeof t?t():t,1==r.length?Modernizr[r[0]]=t:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=t),i([(t&&0!=t?"":"no-")+r.join("-")]),Modernizr._trigger(e,t)}return Modernizr}function d(e,t){return function(){return e.apply(t,arguments)}}function p(e,t,n){var o;for(var i in e)if(e[i]in t)return n===!1?e[i]:(o=t[e[i]],r(o,"function")?d(o,n||t):o);return!1}function m(e){return e.replace(/([A-Z])/g,function(e,t){return"-"+t.toLowerCase()}).replace(/^ms-/,"-ms-")}function h(t,n,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,t,n);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var a=i.error?"error":"log";i[a].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!n&&t.currentStyle&&t.currentStyle[r];return o}function g(t,r){var o=t.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(m(t[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+m(t[o])+":"+r+")");return i=i.join(" or "),u("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==h(e,null,"position")})}return n}function v(e,t,o,i){function l(){c&&(delete M.style,delete M.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var c,d,p,m,h,v=["modernizr","tspan","samp"];!M.style&&v.length;)c=!0,M.modElem=s(v.shift()),M.style=M.modElem.style;for(p=e.length,d=0;p>d;d++)if(m=e[d],h=M.style[m],f(m,"-")&&(m=a(m)),M.style[m]!==n){if(i||r(o,"undefined"))return l(),"pfx"==t?m:!0;try{M.style[m]=o}catch(y){}if(M.style[m]!=h)return l(),"pfx"==t?m:!0}return l(),!1}function y(e,t,n,o,i){var a=e.charAt(0).toUpperCase()+e.slice(1),s=(e+" "+z.join(a+" ")+a).split(" ");return r(t,"string")||r(t,"undefined")?v(s,t,o,i):(s=(e+" "+N.join(a+" ")+a).split(" "),p(s,t,n))}function C(e,t,r){return y(e,n,n,t,r)}var S=[],_=[],w={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,t){var n=this;setTimeout(function(){t(n[e])},0)},addTest:function(e,t,n){_.push({name:e,fn:t,options:n})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=w,Modernizr=new Modernizr,Modernizr.addTest("localstorage",function(){var e="modernizr";try{return localStorage.setItem(e,e),localStorage.removeItem(e),!0}catch(t){return!1}});var E=w._config.usePrefixes?" -webkit- -moz- -o- -ms- ".split(" "):["",""];w._prefixes=E;var b=t.documentElement,x="svg"===b.nodeName.toLowerCase();x||!function(e,t){function n(e,t){var n=e.createElement("p"),r=e.getElementsByTagName("head")[0]||e.documentElement;return n.innerHTML="x<style>"+t+"</style>",r.insertBefore(n.lastChild,r.firstChild)}function r(){var e=C.elements;return"string"==typeof e?e.split(" "):e}function o(e,t){var n=C.elements;"string"!=typeof n&&(n=n.join(" ")),"string"!=typeof e&&(e=e.join(" ")),C.elements=n+" "+e,u(t)}function i(e){var t=y[e[g]];return t||(t={},v++,e[g]=v,y[v]=t),t}function a(e,n,r){if(n||(n=t),c)return n.createElement(e);r||(r=i(n));var o;return o=r.cache[e]?r.cache[e].cloneNode():h.test(e)?(r.cache[e]=r.createElem(e)).cloneNode():r.createElem(e),!o.canHaveChildren||m.test(e)||o.tagUrn?o:r.frag.appendChild(o)}function s(e,n){if(e||(e=t),c)return e.createDocumentFragment();n=n||i(e);for(var o=n.frag.cloneNode(),a=0,s=r(),l=s.length;l>a;a++)o.createElement(s[a]);return o}function l(e,t){t.cache||(t.cache={},t.createElem=e.createElement,t.createFrag=e.createDocumentFragment,t.frag=t.createFrag()),e.createElement=function(n){return C.shivMethods?a(n,e,t):t.createElem(n)},e.createDocumentFragment=Function("h,f","return function(){var n=f.cloneNode(),c=n.createElement;h.shivMethods&&("+r().join().replace(/[\w\-:]+/g,function(e){return t.createElem(e),t.frag.createElement(e),'c("'+e+'")'})+");return n}")(C,t.frag)}function u(e){e||(e=t);var r=i(e);return!C.shivCSS||f||r.hasCSS||(r.hasCSS=!!n(e,"article,aside,dialog,figcaption,figure,footer,header,hgroup,main,nav,section{display:block}mark{background:#FF0;color:#000}template{display:none}")),c||l(e,r),e}var f,c,d="3.7.3",p=e.html5||{},m=/^<|^(?:button|map|select|textarea|object|iframe|option|optgroup)$/i,h=/^(?:a|b|code|div|fieldset|h1|h2|h3|h4|h5|h6|i|label|li|ol|p|q|span|strong|style|table|tbody|td|th|tr|ul)$/i,g="_html5shiv",v=0,y={};!function(){try{var e=t.createElement("a");e.innerHTML="<xyz></xyz>",f="hidden"in e,c=1==e.childNodes.length||function(){t.createElement("a");var e=t.createDocumentFragment();return"undefined"==typeof e.cloneNode||"undefined"==typeof e.createDocumentFragment||"undefined"==typeof e.createElement}()}catch(n){f=!0,c=!0}}();var C={elements:p.elements||"abbr article aside audio bdi canvas data datalist details dialog figcaption figure footer header hgroup main mark meter nav output picture progress section summary template time video",version:d,shivCSS:p.shivCSS!==!1,supportsUnknownElements:c,shivMethods:p.shivMethods!==!1,type:"default",shivDocument:u,createElement:a,createDocumentFragment:s,addElements:o};e.html5=C,u(t),"object"==typeof module&&module.exports&&(module.exports=C)}("undefined"!=typeof e?e:this,t);var T="Moz O ms Webkit",N=w._config.usePrefixes?T.toLowerCase().split(" "):[];w._domPrefixes=N;var P="CSS"in e&&"supports"in e.CSS,j="supportsCSS"in e;Modernizr.addTest("supports",P||j);var z=w._config.usePrefixes?T.split(" "):[];w._cssomPrefixes=z;var k=function(t){var r,o=E.length,i=e.CSSRule;if("undefined"==typeof i)return n;if(!t)return!1;if(t=t.replace(/^@/,""),r=t.replace(/-/g,"_").toUpperCase()+"_RULE",r in i)return"@"+t;for(var a=0;o>a;a++){var s=E[a],l=s.toUpperCase()+"_"+r;if(l in i)return"@-"+s.toLowerCase()+"-"+t}return!1};w.atRule=k;var F;w.testStyles=u;!function(){var e={}.hasOwnProperty;F=r(e,"undefined")||r(e.call,"undefined")?function(e,t){return t in e&&r(e.constructor.prototype[t],"undefined")}:function(t,n){return e.call(t,n)}}(),w._l={},w.on=function(e,t){this._l[e]||(this._l[e]=[]),this._l[e].push(t),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},w._trigger=function(e,t){if(this._l[e]){var n=this._l[e];setTimeout(function(){var e,r;for(e=0;e<n.length;e++)(r=n[e])(t)},0),delete this._l[e]}},Modernizr._q.push(function(){w.addTest=c}),Modernizr.addTest("svgasimg",t.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1"));var L={elem:s("modernizr")};Modernizr._q.push(function(){delete L.elem});var M={style:L.elem.style};Modernizr._q.unshift(function(){delete M.style});w.testProp=function(e,t,r){return v([e],n,t,r)};w.testAllProps=y;w.prefixed=function(e,t,n){return 0===e.indexOf("@")?k(e):(-1!=e.indexOf("-")&&(e=a(e)),t?y(e,t,n):y(e,"pfx"))};w.testAllProps=C,Modernizr.addTest("csstransforms3d",function(){return!!C("perspective","1px",!0)}),Modernizr.addTest("csstransitions",C("transition","all",!0)),o(),i(S),delete w.addTest,delete w.addAsyncTest;for(var O=0;O<Modernizr._q.length;O++)Modernizr._q[O]();e.Modernizr=Modernizr}(window,document);
+/*!
+ * smooth-scroll v14.2.1: Animate scrolling to anchor links
+ * (c) 2018 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/smooth-scroll
+ */
+
+/**
+ * closest() polyfill
+ * @link https://developer.mozilla.org/en-US/docs/Web/API/Element/closest#Polyfill
+ */
+if (window.Element && !Element.prototype.closest) {
+	Element.prototype.closest = function(s) {
+		var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+			i,
+			el = this;
+		do {
+			i = matches.length;
+			while (--i >= 0 && matches.item(i) !== el) {}
+		} while ((i < 0) && (el = el.parentElement));
+		return el;
+	};
+}
+
+/**
+ * CustomEvent() polyfill
+ * https://developer.mozilla.org/en-US/docs/Web/API/CustomEvent/CustomEvent#Polyfill
+ */
+(function () {
+
+	if (typeof window.CustomEvent === "function") return false;
+
+	function CustomEvent(event, params) {
+		params = params || { bubbles: false, cancelable: false, detail: undefined };
+		var evt = document.createEvent('CustomEvent');
+		evt.initCustomEvent(event, params.bubbles, params.cancelable, params.detail);
+		return evt;
+	}
+
+	CustomEvent.prototype = window.Event.prototype;
+
+	window.CustomEvent = CustomEvent;
+})();
+/**
+ * requestAnimationFrame() polyfill
+ * By Erik Möller. Fixes from Paul Irish and Tino Zijdel.
+ * @link http://paulirish.com/2011/requestanimationframe-for-smart-animating/
+ * @link http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
+ * @license MIT
+ */
+(function() {
+	var lastTime = 0;
+	var vendors = ['ms', 'moz', 'webkit', 'o'];
+	for(var x = 0; x < vendors.length && !window.requestAnimationFrame; ++x) {
+		window.requestAnimationFrame = window[vendors[x]+'RequestAnimationFrame'];
+		window.cancelAnimationFrame = window[vendors[x]+'CancelAnimationFrame'] ||
+		                              window[vendors[x]+'CancelRequestAnimationFrame'];
+	}
+
+	if (!window.requestAnimationFrame) {
+		window.requestAnimationFrame = function(callback, element) {
+			var currTime = new Date().getTime();
+			var timeToCall = Math.max(0, 16 - (currTime - lastTime));
+			var id = window.setTimeout((function() { callback(currTime + timeToCall); }),
+				timeToCall);
+			lastTime = currTime + timeToCall;
+			return id;
+		};
+	}
+
+	if (!window.cancelAnimationFrame) {
+		window.cancelAnimationFrame = function(id) {
+			clearTimeout(id);
+		};
+	}
+}());
+
+(function (root, factory) {
+	if (typeof define === 'function' && define.amd) {
+		define([], (function () {
+			return factory(root);
+		}));
+	} else if (typeof exports === 'object') {
+		module.exports = factory(root);
+	} else {
+		root.SmoothScroll = factory(root);
+	}
+})(typeof global !== 'undefined' ? global : typeof window !== 'undefined' ? window : this, (function (window) {
+
+	'use strict';
+
+	//
+	// Default settings
+	//
+
+	var defaults = {
+		// Selectors
+		ignore: '[data-scroll-ignore]',
+		header: null,
+		topOnEmptyHash: true,
+
+		// Speed & Easing
+		speed: 500,
+		clip: true,
+		offset: 0,
+		easing: 'easeInOutCubic',
+		customEasing: null,
+
+		// History
+		updateURL: true,
+		popstate: true,
+
+		// Custom Events
+		emitEvents: true
+	};
+
+
+	//
+	// Utility Methods
+	//
+
+	/**
+	 * Check if browser supports required methods
+	 * @return {Boolean} Returns true if all required methods are supported
+	 */
+	var supports = function () {
+		return (
+			'querySelector' in document &&
+			'addEventListener' in window &&
+			'requestAnimationFrame' in window &&
+			'closest' in window.Element.prototype
+		);
+	};
+
+	/**
+	 * Merge two or more objects. Returns a new object.
+	 * @param {Object}   objects  The objects to merge together
+	 * @returns {Object}          Merged values of defaults and options
+	 */
+	var extend = function () {
+
+		// Variables
+		var extended = {};
+
+		// Merge the object into the extended object
+		var merge = function (obj) {
+			for (var prop in obj) {
+				if (obj.hasOwnProperty(prop)) {
+					extended[prop] = obj[prop];
+				}
+			}
+		};
+
+		// Loop through each object and conduct a merge
+		for (var i = 0; i < arguments.length; i++) {
+			merge(arguments[i]);
+		}
+
+		return extended;
+
+	};
+
+	/**
+	 * Check to see if user prefers reduced motion
+	 * @param  {Object} settings Script settings
+	 */
+	var reduceMotion = function (settings) {
+		if ('matchMedia' in window && window.matchMedia('(prefers-reduced-motion)').matches) {
+			return true;
+		}
+		return false;
+	};
+
+	/**
+	 * Get the height of an element.
+	 * @param  {Node} elem The element to get the height of
+	 * @return {Number}    The element's height in pixels
+	 */
+	var getHeight = function (elem) {
+		return parseInt(window.getComputedStyle(elem).height, 10);
+	};
+
+	/**
+	 * Decode a URI, with error check
+	 * @param  {String} hash The URI to decode
+	 * @return {String}      A decoded URI (or the original string if an error is thrown)
+	 */
+	var decode = function (hash) {
+		var decoded;
+		try {
+			decoded = decodeURIComponent(hash);
+		} catch(e) {
+			decoded = hash;
+		}
+		return decoded;
+	};
+
+	/**
+	 * Escape special characters for use with querySelector
+	 * @author Mathias Bynens
+	 * @link https://github.com/mathiasbynens/CSS.escape
+	 * @param {String} id The anchor ID to escape
+	 */
+	var escapeCharacters = function (id) {
+
+		// Remove leading hash
+		if (id.charAt(0) === '#') {
+			id = id.substr(1);
+		}
+
+		var string = String(id);
+		var length = string.length;
+		var index = -1;
+		var codeUnit;
+		var result = '';
+		var firstCodeUnit = string.charCodeAt(0);
+		while (++index < length) {
+			codeUnit = string.charCodeAt(index);
+			// Note: there’s no need to special-case astral symbols, surrogate
+			// pairs, or lone surrogates.
+
+			// If the character is NULL (U+0000), then throw an
+			// `InvalidCharacterError` exception and terminate these steps.
+			if (codeUnit === 0x0000) {
+				throw new InvalidCharacterError(
+					'Invalid character: the input contains U+0000.'
+				);
+			}
+
+			if (
+				// If the character is in the range [\1-\1F] (U+0001 to U+001F) or is
+				// U+007F, […]
+				(codeUnit >= 0x0001 && codeUnit <= 0x001F) || codeUnit == 0x007F ||
+				// If the character is the first character and is in the range [0-9]
+				// (U+0030 to U+0039), […]
+				(index === 0 && codeUnit >= 0x0030 && codeUnit <= 0x0039) ||
+				// If the character is the second character and is in the range [0-9]
+				// (U+0030 to U+0039) and the first character is a `-` (U+002D), […]
+				(
+					index === 1 &&
+					codeUnit >= 0x0030 && codeUnit <= 0x0039 &&
+					firstCodeUnit === 0x002D
+				)
+			) {
+				// http://dev.w3.org/csswg/cssom/#escape-a-character-as-code-point
+				result += '\\' + codeUnit.toString(16) + ' ';
+				continue;
+			}
+
+			// If the character is not handled by one of the above rules and is
+			// greater than or equal to U+0080, is `-` (U+002D) or `_` (U+005F), or
+			// is in one of the ranges [0-9] (U+0030 to U+0039), [A-Z] (U+0041 to
+			// U+005A), or [a-z] (U+0061 to U+007A), […]
+			if (
+				codeUnit >= 0x0080 ||
+				codeUnit === 0x002D ||
+				codeUnit === 0x005F ||
+				codeUnit >= 0x0030 && codeUnit <= 0x0039 ||
+				codeUnit >= 0x0041 && codeUnit <= 0x005A ||
+				codeUnit >= 0x0061 && codeUnit <= 0x007A
+			) {
+				// the character itself
+				result += string.charAt(index);
+				continue;
+			}
+
+			// Otherwise, the escaped character.
+			// http://dev.w3.org/csswg/cssom/#escape-a-character
+			result += '\\' + string.charAt(index);
+
+		}
+
+		// Return sanitized hash
+		var hash;
+		try {
+			hash = decodeURIComponent('#' + result);
+		} catch(e) {
+			hash = '#' + result;
+		}
+		return hash;
+
+	};
+
+	/**
+	 * Calculate the easing pattern
+	 * @link https://gist.github.com/gre/1650294
+	 * @param {String} type Easing pattern
+	 * @param {Number} time Time animation should take to complete
+	 * @returns {Number}
+	 */
+	var easingPattern = function (settings, time) {
+		var pattern;
+
+		// Default Easing Patterns
+		if (settings.easing === 'easeInQuad') pattern = time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuad') pattern = time * (2 - time); // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuad') pattern = time < 0.5 ? 2 * time * time : -1 + (4 - 2 * time) * time; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInCubic') pattern = time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutCubic') pattern = (--time) * time * time + 1; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutCubic') pattern = time < 0.5 ? 4 * time * time * time : (time - 1) * (2 * time - 2) * (2 * time - 2) + 1; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInQuart') pattern = time * time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuart') pattern = 1 - (--time) * time * time * time; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuart') pattern = time < 0.5 ? 8 * time * time * time * time : 1 - 8 * (--time) * time * time * time; // acceleration until halfway, then deceleration
+		if (settings.easing === 'easeInQuint') pattern = time * time * time * time * time; // accelerating from zero velocity
+		if (settings.easing === 'easeOutQuint') pattern = 1 + (--time) * time * time * time * time; // decelerating to zero velocity
+		if (settings.easing === 'easeInOutQuint') pattern = time < 0.5 ? 16 * time * time * time * time * time : 1 + 16 * (--time) * time * time * time * time; // acceleration until halfway, then deceleration
+
+		// Custom Easing Patterns
+		if (!!settings.customEasing) pattern = settings.customEasing(time);
+
+		return pattern || time; // no easing, no acceleration
+	};
+
+	/**
+	 * Determine the document's height
+	 * @returns {Number}
+	 */
+	var getDocumentHeight = function () {
+		return Math.max(
+			document.body.scrollHeight, document.documentElement.scrollHeight,
+			document.body.offsetHeight, document.documentElement.offsetHeight,
+			document.body.clientHeight, document.documentElement.clientHeight
+		);
+	};
+
+	/**
+	 * Calculate how far to scroll
+	 * Clip support added by robjtede - https://github.com/cferdinandi/smooth-scroll/issues/405
+	 * @param {Element} anchor       The anchor element to scroll to
+	 * @param {Number}  headerHeight Height of a fixed header, if any
+	 * @param {Number}  offset       Number of pixels by which to offset scroll
+	 * @param {Boolean} clip         If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+	 * @returns {Number}
+	 */
+	var getEndLocation = function (anchor, headerHeight, offset, clip) {
+		var location = 0;
+		if (anchor.offsetParent) {
+			do {
+				location += anchor.offsetTop;
+				anchor = anchor.offsetParent;
+			} while (anchor);
+		}
+		location = Math.max(location - headerHeight - offset, 0);
+		if (clip) {
+			location = Math.min(location, getDocumentHeight() - window.innerHeight);
+		}
+ 		return location;
+	};
+
+	/**
+	 * Get the height of the fixed header
+	 * @param  {Node}   header The header
+	 * @return {Number}        The height of the header
+	 */
+	var getHeaderHeight = function (header) {
+		return !header ? 0 : (getHeight(header) + header.offsetTop);
+	};
+
+	/**
+	 * Update the URL
+	 * @param  {Node}    anchor  The anchor that was scrolled to
+	 * @param  {Boolean} isNum   If true, anchor is a number
+	 * @param  {Object}  options Settings for Smooth Scroll
+	 */
+	var updateURL = function (anchor, isNum, options) {
+
+		// Bail if the anchor is a number
+		if (isNum) return;
+
+		// Verify that pushState is supported and the updateURL option is enabled
+		if (!history.pushState || !options.updateURL) return;
+
+		// Update URL
+		history.pushState(
+			{
+				smoothScroll: JSON.stringify(options),
+				anchor: anchor.id
+			},
+			document.title,
+			anchor === document.documentElement ? '#top' : '#' + anchor.id
+		);
+
+	};
+
+	/**
+	 * Bring the anchored element into focus
+	 * @param {Node}     anchor      The anchor element
+	 * @param {Number}   endLocation The end location to scroll to
+	 * @param {Boolean}  isNum       If true, scroll is to a position rather than an element
+	 */
+	var adjustFocus = function (anchor, endLocation, isNum) {
+
+		// Is scrolling to top of page, blur
+		if (anchor === 0) {
+			document.body.focus();
+		}
+
+		// Don't run if scrolling to a number on the page
+		if (isNum) return;
+
+		// Otherwise, bring anchor element into focus
+		anchor.focus();
+		if (document.activeElement !== anchor) {
+			anchor.setAttribute('tabindex', '-1');
+			anchor.focus();
+			anchor.style.outline = 'none';
+		}
+		window.scrollTo(0 , endLocation);
+
+	};
+
+	/**
+	 * Emit a custom event
+	 * @param  {String} type    The event type
+	 * @param  {Object} options The settings object
+	 * @param  {Node}   anchor  The anchor element
+	 * @param  {Node}   toggle  The toggle element
+	 */
+	var emitEvent = function (type, options, anchor, toggle) {
+		if (!options.emitEvents || typeof window.CustomEvent !== 'function') return;
+		var event = new CustomEvent(type, {
+			bubbles: true,
+			detail: {
+				anchor: anchor,
+				toggle: toggle
+			}
+		});
+		document.dispatchEvent(event);
+	};
+
+
+	//
+	// SmoothScroll Constructor
+	//
+
+	var SmoothScroll = function (selector, options) {
+
+		//
+		// Variables
+		//
+
+		var smoothScroll = {}; // Object for public APIs
+		var settings, anchor, toggle, fixedHeader, headerHeight, eventTimeout, animationInterval;
+
+
+		//
+		// Methods
+		//
+
+		/**
+		 * Cancel a scroll-in-progress
+		 */
+		smoothScroll.cancelScroll = function (noEvent) {
+			cancelAnimationFrame(animationInterval);
+			animationInterval = null;
+			if (noEvent) return;
+			emitEvent('scrollCancel', settings);
+		};
+
+		/**
+		 * Start/stop the scrolling animation
+		 * @param {Node|Number} anchor  The element or position to scroll to
+		 * @param {Element}     toggle  The element that toggled the scroll event
+		 * @param {Object}      options
+		 */
+		smoothScroll.animateScroll = function (anchor, toggle, options) {
+
+			// Local settings
+			var animateSettings = extend(settings || defaults, options || {}); // Merge user options with defaults
+
+			// Selectors and variables
+			var isNum = Object.prototype.toString.call(anchor) === '[object Number]' ? true : false;
+			var anchorElem = isNum || !anchor.tagName ? null : anchor;
+			if (!isNum && !anchorElem) return;
+			var startLocation = window.pageYOffset; // Current location on the page
+			if (animateSettings.header && !fixedHeader) {
+				// Get the fixed header if not already set
+				fixedHeader = document.querySelector(animateSettings.header);
+			}
+			if (!headerHeight) {
+				// Get the height of a fixed header if one exists and not already set
+				headerHeight = getHeaderHeight(fixedHeader);
+			}
+			var endLocation = isNum ? anchor : getEndLocation(anchorElem, headerHeight, parseInt((typeof animateSettings.offset === 'function' ? animateSettings.offset(anchor, toggle) : animateSettings.offset), 10), animateSettings.clip); // Location to scroll to
+			var distance = endLocation - startLocation; // distance to travel
+			var documentHeight = getDocumentHeight();
+			var timeLapsed = 0;
+			var start, percentage, position;
+
+			/**
+			 * Stop the scroll animation when it reaches its target (or the bottom/top of page)
+			 * @param {Number} position Current position on the page
+			 * @param {Number} endLocation Scroll to location
+			 * @param {Number} animationInterval How much to scroll on this loop
+			 */
+			var stopAnimateScroll = function (position, endLocation) {
+
+				// Get the current location
+				var currentLocation = window.pageYOffset;
+
+				// Check if the end location has been reached yet (or we've hit the end of the document)
+				if (position == endLocation || currentLocation == endLocation || ((startLocation < endLocation && window.innerHeight + currentLocation) >= documentHeight)) {
+
+					// Clear the animation timer
+					smoothScroll.cancelScroll(true);
+
+					// Bring the anchored element into focus
+					adjustFocus(anchor, endLocation, isNum);
+
+					// Emit a custom event
+					emitEvent('scrollStop', animateSettings, anchor, toggle);
+
+					// Reset start
+					start = null;
+					animationInterval = null;
+
+					return true;
+
+				}
+			};
+
+			/**
+			 * Loop scrolling animation
+			 */
+			var loopAnimateScroll = function (timestamp) {
+				if (!start) { start = timestamp; }
+				timeLapsed += timestamp - start;
+				percentage = (timeLapsed / parseInt(animateSettings.speed, 10));
+				percentage = (percentage > 1) ? 1 : percentage;
+				position = startLocation + (distance * easingPattern(animateSettings, percentage));
+				window.scrollTo(0, Math.floor(position));
+				if (!stopAnimateScroll(position, endLocation)) {
+					animationInterval = window.requestAnimationFrame(loopAnimateScroll);
+					start = timestamp;
+				}
+			};
+
+			/**
+			 * Reset position to fix weird iOS bug
+			 * @link https://github.com/cferdinandi/smooth-scroll/issues/45
+			 */
+			if (window.pageYOffset === 0) {
+				window.scrollTo(0, 0);
+			}
+
+			// Update the URL
+			updateURL(anchor, isNum, animateSettings);
+
+			// Emit a custom event
+			emitEvent('scrollStart', animateSettings, anchor, toggle);
+
+			// Start scrolling animation
+			smoothScroll.cancelScroll(true);
+			window.requestAnimationFrame(loopAnimateScroll);
+
+		};
+
+		/**
+		 * If smooth scroll element clicked, animate scroll
+		 */
+		var clickHandler = function (event) {
+
+			// Don't run if the user prefers reduced motion
+			if (reduceMotion(settings)) return;
+
+			// Don't run if right-click or command/control + click
+			if (event.button !== 0 || event.metaKey || event.ctrlKey) return;
+
+			// Check if event.target has closest() method
+			// By @totegi - https://github.com/cferdinandi/smooth-scroll/pull/401/
+			if(!('closest' in event.target))return;
+
+			// Check if a smooth scroll link was clicked
+			toggle = event.target.closest(selector);
+			if (!toggle || toggle.tagName.toLowerCase() !== 'a' || event.target.closest(settings.ignore)) return;
+
+			// Only run if link is an anchor and points to the current page
+			if (toggle.hostname !== window.location.hostname || toggle.pathname !== window.location.pathname || !/#/.test(toggle.href)) return;
+
+			// Get an escaped version of the hash
+			var hash = escapeCharacters(decode(toggle.hash));
+
+			// Get the anchored element
+			var anchor = settings.topOnEmptyHash && hash === '#' ? document.documentElement : document.querySelector(hash);
+			anchor = !anchor && hash === '#top' ? document.documentElement : anchor;
+
+			// If anchored element exists, scroll to it
+			if (!anchor) return;
+			event.preventDefault();
+			smoothScroll.animateScroll(anchor, toggle);
+
+		};
+
+		/**
+		 * Animate scroll on popstate events
+		 */
+		var popstateHandler = function (event) {
+			// Stop if history.state doesn't exist (ex. if clicking on a broken anchor link).
+			// fixes `Cannot read property 'smoothScroll' of null` error getting thrown.
+			if (history.state === null) return; 
+
+			// Only run if state is a popstate record for this instantiation
+			if (!history.state.smoothScroll || history.state.smoothScroll !== JSON.stringify(settings)) return;
+
+			// Only run if state includes an anchor
+			if (!history.state.anchor) return;
+
+			// Get the anchor
+			var anchor = document.querySelector(escapeCharacters(decode(history.state.anchor)));
+			if (!anchor) return;
+
+			// Animate scroll to anchor link
+			smoothScroll.animateScroll(anchor, null, {updateURL: false});
+
+		};
+
+		/**
+		 * On window scroll and resize, only run events at a rate of 15fps for better performance
+		 */
+		var resizeThrottler = function (event) {
+			if (!eventTimeout) {
+				eventTimeout = setTimeout((function() {
+					eventTimeout = null; // Reset timeout
+					headerHeight = getHeaderHeight(fixedHeader); // Get the height of a fixed header if one exists
+				}), 66);
+			}
+		};
+
+		/**
+		 * Destroy the current initialization.
+		 */
+		smoothScroll.destroy = function () {
+
+			// If plugin isn't already initialized, stop
+			if (!settings) return;
+
+			// Remove event listeners
+			document.removeEventListener('click', clickHandler, false);
+			window.removeEventListener('resize', resizeThrottler, false);
+			window.removeEventListener('popstate', popstateHandler, false);
+
+			// Cancel any scrolls-in-progress
+			smoothScroll.cancelScroll();
+
+			// Reset variables
+			settings = null;
+			anchor = null;
+			toggle = null;
+			fixedHeader = null;
+			headerHeight = null;
+			eventTimeout = null;
+			animationInterval = null;
+
+		};
+
+		/**
+		 * Initialize Smooth Scroll
+		 * @param {Object} options User settings
+		 */
+		smoothScroll.init = function (options) {
+
+			// feature test
+			if (!supports()) throw 'Smooth Scroll: This browser does not support the required JavaScript methods and browser APIs.';
+
+			// Destroy any existing initializations
+			smoothScroll.destroy();
+
+			// Selectors and variables
+			settings = extend(defaults, options || {}); // Merge user options with defaults
+			fixedHeader = settings.header ? document.querySelector(settings.header) : null; // Get the fixed header
+			headerHeight = getHeaderHeight(fixedHeader);
+
+			// When a toggle is clicked, run the click handler
+			document.addEventListener('click', clickHandler, false);
+
+			// If window is resized and there's a fixed header, recalculate its size
+			if (fixedHeader) {
+				window.addEventListener('resize', resizeThrottler, false);
+			}
+
+			// If updateURL and popState are enabled, listen for pop events
+			if (settings.updateURL && settings.popstate) {
+				window.addEventListener('popstate', popstateHandler, false);
+			}
+
+		};
+
+
+		//
+		// Initialize plugin
+		//
+
+		smoothScroll.init(options);
+
+
+		//
+		// Public APIs
+		//
+
+		return smoothScroll;
+
+	};
+
+	return SmoothScroll;
+
+}));
+
 // Fonts
 
 // var font = new FontFaceObserver('Sole_Serif_Headline', {
@@ -4585,6 +5292,19 @@ function load_vanilla() {
             parent.parentNode.removeChild(parent);
         };
     }
+
+    var scroll = new SmoothScroll('a[href*="#"]', {
+
+
+        // Speed & Easing
+        speed: 750, // Integer. How fast to complete the scroll in milliseconds
+        clip: true, // If true, adjust scroll distance to prevent abrupt stops near the bottom of the page
+        offset: 52
+
+    });
+
+
+
 
     // rightHeight.init();
 
@@ -4775,6 +5495,16 @@ function load_jquery() {
             // });
 
 
+            // Close mobile & tablet menu on item click
+            $('.navbar-item').each(function(e) {
+                $(this).click(function() {
+                    if ($('#navbarMenu').hasClass('is-active')) {
+                        $('#navbarMenu').removeClass('is-active');
+                    }
+                });
+            });
+
+
 
             var $animation_elements = $('.sticky--details');
             var $window = $(window);
@@ -4800,39 +5530,15 @@ function load_jquery() {
                 });
             }
 
-            $window.on('scroll resize', in_view);
-            $window.trigger('scroll');
+            // $window.on('scroll resize', in_view);
+            // $window.trigger('scroll');
 
 
-            // Check a href for an anchor. If exists, and in document, scroll to it.
-            // If href argument ommited, assumes context (this) is HTML Element,
-            // which will be the case when invoked by jQuery after an event
 
-            function scroll_if_anchor(href) {
-                href = typeof(href) == "string" ? href : $(this).attr("href");
-                // You could easily calculate this dynamically if you prefer
-                var fromTop = 108;
-                // If our Href points to a valid, non-empty anchor, and is on the same page (e.g. #foo)
-                // Legacy jQuery and IE7 may have issues: http://stackoverflow.com/q/1593174
-                if (href.indexOf("#") == 0) {
-                    var $target = $(href);
-                    // Older browser without pushState might flicker here, as they momentarily
-                    // jump to the wrong position (IE < 10)
-                    if ($target.length) {
-                        $('html, body').animate({
-                            scrollTop: $target.offset().top - fromTop
-                        });
-                        if (history && "pushState" in history) {
-                            history.pushState({}, document.title, window.location.pathname + href);
-                            return false;
-                        }
-                    }
-                }
-            }
             // When our page loads, check to see if it contains and anchor
-            scroll_if_anchor(window.location.hash);
-            // Intercept all anchor clicks
-            $("body").on("click", "a", scroll_if_anchor);
+            // scroll_if_anchor(window.location.hash);
+            // // Intercept all anchor clicks
+            // $("body").on("click", "a", scroll_if_anchor);
 
 
 

@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 });
 
+
+
+
 // quickview
 
 

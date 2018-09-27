@@ -17,11 +17,17 @@ $head: (font-family: "Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Ti
 
 $ref: (font-family: "Montserrat, sans-serif", bold: 700, normal: 400, light: 400, italic: normal, cap-height: 0.7);
 
-$text_m: (font-family: #{$serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
+$text_m: $text;
 
-$head_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, cap-height: 0.7);
+$head_m: $head;
 
-$ref_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
+$ref_m: $ref;
+
+// $text_m: (font-family: #{$serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
+
+// $head_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, cap-height: 0.7);
+
+// $ref_m: (font-family: #{$sans-serif-default}, bold: 700, normal: 400, light: 300, italic: italic, cap-height: 0.7);
 
 $monospacetype: (font-family: "Menlo, monospace", regular: 400, cap-height: 0.68) !default;
 
@@ -99,9 +105,14 @@ $pink-contrast: #c4b6a8;
 
 // trust
 
-$salmon_background: #f5e5d5;
+$salmon_background: #F5E5D5;
 
-$salmon_box: #e6d6c7;
+// $salmon_box: #e6d6c7;
+
+$salmon_box: rgba(0, 0, 0, 0.05);
+
+
+$salmon_box_border: #d1c0af;
 
 $black_text: #1a171b;
 

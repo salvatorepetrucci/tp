@@ -24,4 +24,3 @@ function downloadJSAtOnload() {
 if (window.addEventListener) window.addEventListener("load", downloadJSAtOnload, false);
 else if (window.attachEvent) window.attachEvent("onload", downloadJSAtOnload);
 else window.onload = downloadJSAtOnload;
-

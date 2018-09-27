@@ -1,0 +1,244 @@
+// tablet and up
+
+@media screen and (min-width: 768px), print {
+
+
+   .typeset {
+        p, ul, ol {
+            font-family: unquote(map-get($text, font-family));
+        }
+
+        h1, h2, h3, h4, h5, h6
+         {
+            font-family: unquote(map-get($head, font-family));
+            font-style: map-get($head, normal);
+            font-weight: map-get($head, bold);
+        }
+
+        .h1, .h2, .h3, .h4, .h5, .h6
+         {
+            font-family: unquote(map-get($head, font-family));
+            font-weight: map-get($head, bold);
+        }
+
+        p, ul, ol {
+            @include typeset($fontsize: c, $font: $text, $lineheight: 30 / 16, $below: 1, $breakpoint: 1);
+        }
+
+        // Heading level 1.
+        h1, .h1 {
+            @include typeset($fontsize: h1, $font: $head, $lineheight: 40 / 16, $below: 1, $breakpoint: 1);
+        }
+
+        // Heading level 2.
+        h2, .h2 {
+            @include typeset(h2, $head, 38 / 16, 1, 1);
+        }
+
+        // Heading level 3.
+        h3, .h3 {
+            @include typeset(h3, $head, 34 / 16, 1, 1);
+        }
+
+        // Heading level 4.
+        h4, .h4 {
+            @include typeset(h4, $head, 30 / 16, 1, 1);
+        }
+
+        // Heading level 5.
+        h5, .h5 {
+            @include typeset(h5, $head, 30 / 16, 0, 1);
+        }
+
+        // Heading level 6.
+        h6, .c {
+            @include typeset(c, $head, 30 / 16, 0, 1);
+        }
+
+        // Lists.
+        ul, ol {
+            @include baseline(c, $text, 2, 2, 1);
+
+            li {
+                margin-left: 0;
+            }
+        }
+
+        // Definition lists.
+        dl {
+            @include baseline(c, $ref, 2, 2, 1);
+
+            font-family: unquote(map-get($ref, font-family));
+
+            dt, dd {
+                margin-left: 0;
+            }
+
+            dt {
+                font-weight: map-get($text, bold);
+            }
+        }
+
+        // Tables.
+        table {
+            @include typeset(r1, $ref, 2, 1, 1);
+
+            font-family: unquote(map-get($ref, font-family));
+            font-style: normal;
+            font-weight: map-get($head, regular);
+
+            thead {
+                th {
+                    @include typeset(c, $ref, 2, 0, 1);
+                }
+            }
+        }
+
+        // Bold.
+        b, strong, .bold {
+            font-weight: map-get($text, bold);
+        }
+
+        // Italic.
+        em, i, .italic {
+            font-style: map-get($text, italic);
+        }
+
+        // Caption and inline small text.
+        small, .caption {
+            @include fontsize(r2, 1);
+
+            font-family: unquote(map-get($head, font-family));
+            font-style: normal;
+            font-weight: map-get($head, regular);
+        }
+
+        .caption {
+            @include baseline(r2, $head, 2, 2, 1);
+        }
+
+        // Quotes.
+        blockquote {
+            p {
+                font-style: map-get($text, italic);
+
+                // Add spacing below blockquote paragraphs to align to baseline grid.
+                $get-scale: map-get($modular-scale, scale-0);
+                $get-size: map-get($get-scale, c);
+                $rootsize: nth($sizes, 1);
+                $baseline-shift: #{$get-size / 2 * (2 * $rootsize / $get-size - map-get($text, cap-height)) / $rootsize + 0.00001};
+                $baseline-push: #{3 - ($get-size * (2 * $rootsize / $get-size - map-get($text, cap-height)) / $rootsize + 0.00001)};
+
+                margin-bottom: #{$baseline-push}rem;
+                padding-bottom: #{$baseline-shift}rem;
+
+                @for $i from 2 through $breakpoints-limit {
+                    $get-scale: map-get($modular-scale, scale-#{$i - 1});
+                    $get-size: map-get($get-scale, c);
+                    $rootsize: nth($sizes, $i);
+                    $baseline-shift: #{$get-size / 2 * (2 * $rootsize / $get-size - map-get($text, cap-height)) / $rootsize + 0.00001};
+                    $baseline-push: #{3 - ($get-size * (2 * $rootsize / $get-size - map-get($text, cap-height)) / $rootsize + 0.00001)};
+
+                    @media screen and (min-width: nth($points, $i) / 16 * 1em) {
+                        margin-bottom: #{$baseline-push}rem;
+                        padding-bottom: #{$baseline-shift}rem;
+                    }
+                }
+            }
+
+            margin-left: -1rem;
+        }
+
+        // Code
+
+        code {
+            @include fontsize(r2, 1);
+        }
+    }
+
+
+    .sole-logo, .gruppo-logo {
+        height: 70px;
+        overflow: hidden;
+
+        img {
+            padding: 0;
+        }
+    }
+
+    .sole-logo {
+        img {
+            height: 26px;
+            margin-top: 22px;
+        }
+    }
+
+    .gruppo-logo {
+        text-align: center;
+        margin-bottom: 40px;
+
+        img {
+            height: 36px;
+            margin-top: 17px;
+        }
+    }
+
+    .sole-menu, .gruppo-menu {
+        height: 50px;
+        overflow: hidden;
+        line-height: 50px;
+    }
+
+    .sole-menu {
+        border-top: 1px solid #000;
+    }
+
+    .gruppo-menu {
+        border-bottom: 1px solid #fff;
+    }
+
+    .footer-pink {
+        background-color: #feebda;
+        font-family: unquote(map-get($head, font-family));
+        font-weight: map-get($head, bold);
+        font-size: 14px;
+
+        a {
+            color: $black;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }
+
+    .footer-blue {
+        background-color: $blue-dark;
+        font-family: unquote(map-get($ref, font-family));
+        font-size: 14px;
+        color: $white;
+        padding-bottom: 100px;
+
+        .corporate {
+            font-size: 12px;
+            text-align: center;
+            line-height: 20px;
+
+            a {
+                font-weight: map-get($ref, bold);
+            }
+        }
+
+        a {
+            color: $white;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        a:hover {
+            opacity: .7;
+        }
+    }    
+
+}

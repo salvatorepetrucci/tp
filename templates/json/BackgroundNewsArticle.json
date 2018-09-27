@@ -2,4 +2,6 @@
     "@context": "http://schema.org",
     "@type": "BackgroundNewsArticle",
     include "json/partials/+NewsArticle.json"
+    ,
+    include "json/partials/_expires.json"
 }

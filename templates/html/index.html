@@ -1,55 +1,42 @@
 <!DOCTYPE html>
-<html lang="it">
-
-<head>
-    include "html/meta/_core.html"
-    include "html/meta/_facebook.html"
-    include "html/meta/_twitter.html"
-
-    <script type="application/ld+json">
-    include "tmp/bestpractices.json"
-    </script>
-
-    <title>Best Practices - Trust Project Il Sole 24 Ore</title>
-    include "html/partials/_up.html"
-</head>
-
-<body>
-    include "html/partials/_nav.html"
-    include "html/demo/hero/_ethicsPolicy.html"
-    <section class="section content">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-one-third">
-                    include "html/partials/_menu.html"
-
-                </div>
-                <div class="column copy">
-                    include "html/demo/content/_ethicsPolicy.html"
-
-                    <!-- index 2 -->
-                    include "html/demo/content/_missionCoveragePrioritiesPolicy.html"
-                    <!-- index 6 -->
-                    include "html/demo/content/_diversityPolicy.html"
-                    <!-- index 3 -->
-                    include "html/demo/content/_tow.html"
-                    <!-- index 4 -->
-                    include "html/demo/content/_correctionsPolicy.html"
-                    <!-- index 5 -->
-                    include "html/demo/content/_verificationFactCheckingPolicy.html"
-
-                    <!-- index 7 -->
-                    include "html/demo/content/_foundingDate.html"
-                    include "html/demo/content/_ownershipFundingInfo.html"
-                    include "html/demo/content/_masthead.html"
-                    include "html/demo/content/_actionableFeedbackPolicy.html"
-
+<html lang="it" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" class="has-navbar-fixed-top">
+    <head>
+        include "html/meta/_core.html"
+        include "html/meta/_facebook.html"
+        include "html/meta/_twitter.html"
+        <script type="application/ld+json">
+        include "tmp/bestpractices.json"
+        </script>
+        <title>Linee Guida Editoriale - Il Sole 24 Ore</title>
+        include "html/partials/_up.html"
+    </head>
+    <body>
+        include "html/partials/_nav_linee.html"
+        include "html/guide/hero/_ethicsPolicy.html"
+        <section class="section content">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-one-third is-hidden-mobile">
+                        include "html/partials/_menu.html"
+                    </div>
+                    <div class="column typeset">
+                        <div class="copy">
+                            include "html/guide/content/_ethicsPolicy.html"
+                            include "html/guide/content/_missionCoveragePrioritiesPolicy.html"
+                            include "html/guide/content/_diversityPolicy.html"
+                            include "html/guide/content/_diversityStaffingReport.html"
+                            include "html/guide/content/_tow.html"
+                            include "html/guide/content/_correctionsPolicy.html"
+                            include "html/guide/content/_verificationFactCheckingPolicy.html"
+                            include "html/guide/content/_actionableFeedbackPolicy.html"
+                            include "html/guide/content/_foundingDate.html"
+                            include "html/guide/content/_ownershipFundingInfo.html"
+                            include "html/guide/content/_masthead.html"
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    include "html/partials/_footer.html"
-</body>
-
+        </section>
+        include "html/partials/_footer.html"
+    </body>
 </html>

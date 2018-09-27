@@ -20,14 +20,7 @@
     "headline": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod",
     "description": "meta description",
     "articleSection": "Satire",
-    "articleBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-    tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam,
-    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-    consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu fugiat nulla pariatur.Excepteur sint occaecat cupidatat non
-    proident,
-    sunt in culpa qui officia deserunt mollit anim id est laborum.
-    ",
+    "articleBody": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     "keywords": [
         "donald trump",
         "humor",
@@ -52,24 +45,43 @@
             "name": "Mario Rossi"
         }
     },
-    "author": {
-        "@type": "Person",
-        "name": "A.P. Joyce",
-        "sameAs": [
-            "..put the author's IlSole24Ore home/profile page link here..",
-            "https://twitter.com/AndrewPaulJoyce",
-            "https://mic.com/profiles/189287/ap-joyce"
-        ],
-        // Contact Point author markup is not mandatory for article page, feel free to include
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Journalist",
-            "email": "ajoyce@mic.com",
-            "url": "https://mic.com/about#contact-us"
+    "author": [{
+            "@type": "Person",
+            "name": "Carlo Festa",
+            "sameAs": [
+                "..put the author's IlSole24Ore home/profile page link here..",
+                "https://twitter.com/AndrewPaulJoyce",
+                "https://mic.com/profiles/189287/ap-joyce"
+            ],
+            // Contact Point author markup is not mandatory for article page, feel free to include
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Journalist",
+                "email": "ajoyce@mic.com",
+                "url": "https://mic.com/about#contact-us"
+            },
+            // Contact Point author markup is not mandatory for article page, feel free to include
+            "jobTitle": "Reporter"
         },
-        // Contact Point author markup is not mandatory for article page, feel free to include
-        "jobTitle": "Reporter"
-    },
+        {
+            "@type": "Person",
+            "name": "Kenneth Rogoff",
+            "sameAs": [
+                "..put the author's IlSole24Ore home/profile page link here..",
+                "https://twitter.com/AndrewPaulJoyce",
+                "https://mic.com/profiles/189287/ap-joyce"
+            ],
+            // Contact Point author markup is not mandatory for article page, feel free to include
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Journalist",
+                "email": "ajoyce@mic.com",
+                "url": "https://mic.com/about#contact-us"
+            },
+            // Contact Point author markup is not mandatory for article page, feel free to include
+            "jobTitle": "Reporter"
+        }
+    ],
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "url"
@@ -99,5 +111,6 @@
             "headline": "General election 2017: The mystery of the three million 'extra' voters",
             "url": "http://www.bbc.co.uk/news/election-2017-39922798"
         }
-    ]
+    ],
+    "expires": "2017-12-15T23:55:11+00:00"
 }

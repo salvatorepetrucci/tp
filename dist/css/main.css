@@ -6940,7 +6940,7 @@ label.panel-block{
 
 html, body{
   font-family:Montserrat, sans-serif;
-  background:#f5e5d5;
+  background:#F5E5D5;
   color:#1a171b; }
 
 a{
@@ -6955,35 +6955,10 @@ a:hover{
 .sticky{
   position:-webkit-sticky;
   position:sticky;
-  top:25px; }
-
-.content .card-content p, .content .card-content ul, .content .intro p, .content .intro ul{
-  font-family:Sole_Serif_Text, Georgia, Cambria, Times New Roman, Times, serif;
-  font-weight:400; }
-
-.content .card-content p:not(.title), .content .card-content p:not(.subtitle), .content .intro p:not(.title), .content .intro p:not(.subtitle){
-  padding-bottom:0.625rem; }
-
-.content .card-content .title, .content .intro .title{
-  font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
-  font-weight:700; }
+  top:52px; }
 
 .content .card-content ul, .content .intro ul{
-  list-style-type:initial;
-  padding-left:1.25rem; }
-  .content .card-content ul li, .content .intro ul li{
-    padding-bottom:0.625rem; }
-
-.content .card-content ol:not(:last-child),
-.content .card-content p:not(:last-child),
-.content .card-content ul:not(:last-child), .content .intro ol:not(:last-child),
-.content .intro p:not(:last-child),
-.content .intro ul:not(:last-child){
-  margin-bottom:0; }
-
-.subtitle{
-  font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
-  font-weight:400; }
+  list-style-type:initial; }
 
 .navbar-item img{
   height:1.75rem; }
@@ -6995,9 +6970,9 @@ a:hover{
   font-size:1.11rem;
   font-weight:bold; }
 
-.gruppo .hero-body{
+.hero.typeset .hero-body{
   background:#234357; }
-  .gruppo .hero-body .title, .gruppo .hero-body .subtitle{
+  .hero.typeset .hero-body .h1, .hero.typeset .hero-body .h2, .hero.typeset .hero-body .h3{
     color:#ffffff; }
 
 .articles{
@@ -7056,10 +7031,19 @@ div.column.is-8:first-child{
   border-radius:initial; }
 
 .card{
-  background:#e6d6c7;
-  -webkit-box-shadow:rgba(196, 182, 168, 0.8) 0 1px 0;
-          box-shadow:rgba(196, 182, 168, 0.8) 0 1px 0;
-  border-radius:4px; }
+  background:rgba(0, 0, 0, 0.05);
+  -webkit-box-shadow:none;
+          box-shadow:none;
+  border:none;
+  border-radius:0;
+  margin-bottom:1.25rem;
+  color:#1a171b; }
+  .card .card-footer{
+    border:none; }
+  .card a{
+    color:#1a171b; }
+  .card a:hover{
+    color:#4d4747; }
 
 .breathe{
   margin-top:3rem; }
@@ -7114,63 +7098,318 @@ div.column.is-8:first-child{
 .level.adv{
   margin-bottom:0; }
 
-.sole-logo, .gruppo-logo{
-  height:70px;
-  overflow:hidden; }
-  .sole-logo img, .gruppo-logo img{
-    padding:0; }
+.navbar-menu.is-active{
+  height:95vh; }
 
-.sole-logo img{
-  height:26px;
-  margin-top:22px; }
-
-.gruppo-logo{
-  text-align:center;
-  margin-bottom:40px; }
-  .gruppo-logo img{
-    height:36px;
-    margin-top:17px; }
-
-.sole-menu, .gruppo-menu{
-  height:50px;
-  overflow:hidden;
-  line-height:50px; }
-
-.sole-menu{
-  border-top:1px solid #000; }
-
-.gruppo-menu{
-  border-bottom:1px solid #fff; }
-
-.footer-pink{
-  background-color:#e6d6c7;
-  font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
-  font-weight:700;
-  font-size:14px; }
-  .footer-pink a{
-    color:#000;
-    text-transform:uppercase; }
-  .footer-pink a:hover{
-    opacity:.7; }
-
-.footer-blue{
-  background-color:#112531;
-  font-family:Montserrat, sans-serif;
-  font-size:14px;
-  color:#ffffff;
-  padding-bottom:100px; }
-  .footer-blue .corporate{
-    font-size:12px;
-    text-align:center;
-    line-height:20px; }
-    .footer-blue .corporate a{
+@media screen and (max-width: 767px){
+  .typeset p, .typeset ul, .typeset ol{
+    font-family:Sole_Serif_Text, Georgia, Cambria, Times New Roman, Times, serif; }
+  .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6{
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-style:400;
+    font-weight:700; }
+  .typeset .h1, .typeset .h2, .typeset .h3, .typeset .h4, .typeset .h5, .typeset .h6{
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight:700; }
+  .typeset p, .typeset ul, .typeset ol{
+    line-height:1.625rem;
+    font-size:1.125rem;
+    margin-bottom:0.58124rem;
+    padding-top:0.41876rem; }
+  .typeset h1, .typeset .h1{
+    line-height:1.75rem;
+    font-size:1.5rem;
+    margin-bottom:0.64999rem;
+    padding-top:0.35001rem; }
+  .typeset h2, .typeset .h2{
+    line-height:1.5rem;
+    font-size:1.1875rem;
+    margin-bottom:0.66562rem;
+    padding-top:0.33438rem; }
+  .typeset h3, .typeset .h3{
+    line-height:1.5rem;
+    font-size:1.1875rem;
+    margin-bottom:0.66562rem;
+    padding-top:0.33438rem; }
+  .typeset h4, .typeset .h4{
+    line-height:1.5rem;
+    font-size:1.1875rem;
+    margin-bottom:0.66562rem;
+    padding-top:0.33438rem; }
+  .typeset h5, .typeset .h5{
+    line-height:1.625rem;
+    font-size:1.125rem;
+    margin-bottom:0.58124rem;
+    padding-top:0.41876rem; }
+  .typeset h6, .typeset .c{
+    line-height:1.625rem;
+    font-size:1.125rem;
+    margin-bottom:-0.41876rem;
+    padding-top:0.41876rem; }
+  .typeset ul, .typeset ol{
+    line-height:2rem;
+    margin-bottom:1.39374rem;
+    padding-top:0.60626rem; }
+    .typeset ul li, .typeset ol li{
+      margin-left:1rem; }
+  .typeset dl{
+    line-height:2rem;
+    margin-bottom:1.39374rem;
+    padding-top:0.60626rem;
+    font-family:Montserrat, sans-serif; }
+    .typeset dl dt, .typeset dl dd{
+      -webkit-font-feature-settings:'kern', 'onum', 'liga';
+              font-feature-settings:'kern', 'onum', 'liga';
+      margin-left:1rem; }
+    .typeset dl dt{
       font-weight:700; }
-  .footer-blue a{
+  .typeset table{
+    line-height:2rem;
+    font-size:1rem;
+    margin-bottom:0.34999rem;
+    padding-top:0.65001rem;
+    font-family:Montserrat, sans-serif;
+    font-style:400; }
+    .typeset table thead th{
+      line-height:2rem;
+      font-size:1.125rem;
+      margin-bottom:-0.60626rem;
+      padding-top:0.60626rem; } }
+    @media screen and (max-width: 767px) and (min-width: 48em){
+      .typeset table thead th{
+        font-size:1.25rem;
+        margin-bottom:-0.56251rem;
+        padding-top:0.56251rem; } }
+
+@media screen and (max-width: 767px){
+  .typeset b, .typeset strong, .typeset .bold{
+    font-weight:700; }
+  .typeset em, .typeset i, .typeset .italic{
+    font-style:italic; }
+  .typeset small, .typeset .caption{
+    font-size:0.875rem;
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-style:400; }
+  .typeset .caption{
+    line-height:2rem;
+    margin-bottom:1.30624rem;
+    padding-top:0.69376rem; }
+  .typeset blockquote p{
+    font-style:italic;
+    margin-bottom:1.78749rem;
+    padding-bottom:0.60626rem; } }
+  @media screen and (max-width: 767px) and (min-width: 48em){
+    .typeset blockquote p{
+      margin-bottom:1.87499rem;
+      padding-bottom:0.56251rem; } }
+
+@media screen and (max-width: 767px){
+  .typeset code{
+    font-size:0.875rem; }
+  .sole-logo, .gruppo-logo{
+    text-align:center;
+    height:70px;
+    overflow:hidden; }
+    .sole-logo img, .gruppo-logo img{
+      padding:0; }
+  .sole-logo img{
+    height:26px;
+    margin-top:22px; }
+  .gruppo-logo{
+    margin-bottom:40px; }
+    .gruppo-logo img{
+      height:36px;
+      margin-top:17px; }
+  .sole-menu, .gruppo-menu{
+    line-height:20px; }
+  .section-footer{
+    padding-top:70px; }
+  .footer-pink{
+    background-color:#feebda;
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight:700;
+    font-size:14px; }
+    .footer-pink a{
+      color:#000;
+      text-transform:uppercase; }
+    .footer-pink a:hover{
+      opacity:.7; }
+  .footer-blue{
+    background-color:#112531;
+    font-family:Montserrat, sans-serif;
+    font-size:14px;
     color:#ffffff;
-    padding-left:5px;
-    padding-right:5px; }
-  .footer-blue a:hover{
-    opacity:.7; }
+    padding-bottom:100px; }
+    .footer-blue .corporate{
+      font-size:12px;
+      text-align:center;
+      line-height:20px;
+      padding-left:20px;
+      padding-right:20px; }
+      .footer-blue .corporate a{
+        font-weight:700; }
+    .footer-blue a{
+      color:#ffffff;
+      padding-left:5px;
+      padding-right:5px; }
+    .footer-blue a:hover{
+      opacity:.7; }
+  .button.nav-button{
+    display:none; }
+  .sole-menu, .gruppo-menu{
+    display:none; }
+  .hero.typeset .lead{
+    max-width:460px;
+    margin:0 auto; } }
+
+@media screen and (min-width: 768px), print{
+  .typeset p, .typeset ul, .typeset ol{
+    font-family:Sole_Serif_Text, Georgia, Cambria, Times New Roman, Times, serif; }
+  .typeset h1, .typeset h2, .typeset h3, .typeset h4, .typeset h5, .typeset h6{
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-style:400;
+    font-weight:700; }
+  .typeset .h1, .typeset .h2, .typeset .h3, .typeset .h4, .typeset .h5, .typeset .h6{
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight:700; }
+  .typeset p, .typeset ul, .typeset ol{
+    line-height:1.875rem;
+    font-size:1.25rem;
+    margin-bottom:0.49999rem;
+    padding-top:0.50001rem; }
+  .typeset h1, .typeset .h1{
+    line-height:2.5rem;
+    font-size:2.25rem;
+    margin-bottom:0.53749rem;
+    padding-top:0.46251rem; }
+  .typeset h2, .typeset .h2{
+    line-height:2.375rem;
+    font-size:2rem;
+    margin-bottom:0.51249rem;
+    padding-top:0.48751rem; }
+  .typeset h3, .typeset .h3{
+    line-height:2.125rem;
+    font-size:1.75rem;
+    margin-bottom:0.54999rem;
+    padding-top:0.45001rem; }
+  .typeset h4, .typeset .h4{
+    line-height:1.875rem;
+    font-size:1.5rem;
+    margin-bottom:0.58749rem;
+    padding-top:0.41251rem; }
+  .typeset h5, .typeset .h5{
+    line-height:1.875rem;
+    font-size:1.3125rem;
+    margin-bottom:-0.47814rem;
+    padding-top:0.47814rem; }
+  .typeset h6, .typeset .c{
+    line-height:1.875rem;
+    font-size:1.25rem;
+    margin-bottom:-0.50001rem;
+    padding-top:0.50001rem; }
+  .typeset ul, .typeset ol{
+    line-height:2rem;
+    margin-bottom:1.43749rem;
+    padding-top:0.56251rem; }
+    .typeset ul li, .typeset ol li{
+      margin-left:0; }
+  .typeset dl{
+    line-height:2rem;
+    margin-bottom:1.43749rem;
+    padding-top:0.56251rem;
+    font-family:Montserrat, sans-serif; }
+    .typeset dl dt, .typeset dl dd{
+      margin-left:0; }
+    .typeset dl dt{
+      font-weight:700; }
+  .typeset table{
+    line-height:2rem;
+    font-size:1.125rem;
+    margin-bottom:0.39374rem;
+    padding-top:0.60626rem;
+    font-family:Montserrat, sans-serif;
+    font-style:normal; }
+    .typeset table thead th{
+      line-height:2rem;
+      font-size:1.25rem;
+      margin-bottom:-0.56251rem;
+      padding-top:0.56251rem; }
+  .typeset b, .typeset strong, .typeset .bold{
+    font-weight:700; }
+  .typeset em, .typeset i, .typeset .italic{
+    font-style:italic; }
+  .typeset small, .typeset .caption{
+    font-size:1rem;
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-style:normal; }
+  .typeset .caption{
+    line-height:2rem;
+    margin-bottom:1.34999rem;
+    padding-top:0.65001rem; }
+  .typeset blockquote{
+    margin-left:-1rem; }
+    .typeset blockquote p{
+      font-style:italic;
+      margin-bottom:1.78749rem;
+      padding-bottom:0.60626rem; } }
+    @media screen and (min-width: 768px) and (min-width: 48em){
+      .typeset blockquote p{
+        margin-bottom:1.87499rem;
+        padding-bottom:0.56251rem; } }
+
+@media screen and (min-width: 768px), print{
+  .typeset code{
+    font-size:1rem; }
+  .sole-logo, .gruppo-logo{
+    height:70px;
+    overflow:hidden; }
+    .sole-logo img, .gruppo-logo img{
+      padding:0; }
+  .sole-logo img{
+    height:26px;
+    margin-top:22px; }
+  .gruppo-logo{
+    text-align:center;
+    margin-bottom:40px; }
+    .gruppo-logo img{
+      height:36px;
+      margin-top:17px; }
+  .sole-menu, .gruppo-menu{
+    height:50px;
+    overflow:hidden;
+    line-height:50px; }
+  .sole-menu{
+    border-top:1px solid #000; }
+  .gruppo-menu{
+    border-bottom:1px solid #fff; }
+  .footer-pink{
+    background-color:#feebda;
+    font-family:Sole_Serif_Headline, Georgia, Cambria, Times New Roman, Times, serif;
+    font-weight:700;
+    font-size:14px; }
+    .footer-pink a{
+      color:#000;
+      text-transform:uppercase; }
+    .footer-pink a:hover{
+      opacity:.7; }
+  .footer-blue{
+    background-color:#112531;
+    font-family:Montserrat, sans-serif;
+    font-size:14px;
+    color:#ffffff;
+    padding-bottom:100px; }
+    .footer-blue .corporate{
+      font-size:12px;
+      text-align:center;
+      line-height:20px; }
+      .footer-blue .corporate a{
+        font-weight:700; }
+    .footer-blue a{
+      color:#ffffff;
+      padding-left:5px;
+      padding-right:5px; }
+    .footer-blue a:hover{
+      opacity:.7; } }
 
 @font-face{
   font-family:'icomoon';
